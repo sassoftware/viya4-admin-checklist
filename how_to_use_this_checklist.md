@@ -2,7 +2,7 @@
 
 # How to Use This Checklist
 
-Many of the tasks in this checklist take significant effort to complete. It is not likely that an administrator will simply check them off, unless he or she is reviewing the administration framework already in place for an established SAS deployment. For this reason (among others), do not leave administration and housekeeping tasks until the end of your implementation project as an afterthought. Consider every item on this checklist at the beginning of an implementation project. Plan the project to include deliverables relating to each task that you choose to perform with appropriate timescales, dependencies, and resource and effort allocation to ensure they can be completed.
+Many of the tasks in the [checklist](./checklist.md) take significant effort to complete. It is not likely that an administrator will simply check them off, unless he or she is reviewing the administration framework already in place for an established SAS deployment. For this reason (among others), do not leave administration and housekeeping tasks until the end of your implementation project as an afterthought. Consider every item on the [checklist](./checklist.md) at the beginning of an implementation project. Plan the project to include deliverables relating to each task that you choose to perform with appropriate timescales, dependencies, and resource and effort allocation to ensure they can be completed.
 
 The ongoing, regular housekeeping tasks in the second list can be considered the role and responsibility of a SAS administrator or IT administrator.
 
