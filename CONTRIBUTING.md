@@ -43,6 +43,10 @@ Each task file should have these required and optional features:
 
 1. **[Required]**: Give tasks a filename which is unique, fairly short, identifies the main concept of the task and has a .md file extension. Tasks are referred to by their filename (not by their SortString), and so it is preferable not to change a tasks's filename once it has been merged into the project's <code>main</code> branch. If you do change a task's filename, you must also find and similarly change any internal links to the task within this project.
 
+1. **[Required]**: The first line in every task markdown file is a header image, exactly like this:
+
+    `![Global Enablement & Learning](/img/gel_banner_logo_tech-partners.jpg)`
+
 1. **[Required]**: A single level 1 [ATX Heading](https://github.github.com/gfm/#atx-headings) near the top of the file, like this: <code># Task Title</code>
 
     > The text following the '<code># </code>' becomes the task's title when it is listed in tables of contents. It is rendered in HTML as <code>\<h1\>Task Title\<\/h1\></code>.
@@ -64,25 +68,25 @@ Each task file should have these required and optional features:
 
     | Name | Notes on values |
     |------|-----------------|
-    | SortString | Used for sorting tasks within checklist tables.</br>Not a key. Avoid written references to tasks by their SortString. Instead, refer to tasks by their markdown filename which should preferably remain constant.</br>*Note: in previous checklists we often referred to tasks by their id, but this is now avoided because task SortStrings are expected to change from time to time. Changing a task's SortString value should never break a reference to the task.*</br>Intended to be used for sorting tasks in a checklist.</br>May change arbitrarily when we re-order tasks.</br>Suggest 3-digit number. |
+    | SortString | Used for sorting tasks within checklist tables.</br>Not a key. Avoid written references to tasks by their SortString. Instead, refer to tasks by their markdown filename which should preferably remain constant.</br></br>*Note: in previous checklists we often referred to tasks by their id, but this is now avoided because task SortStrings are expected to change from time to time. Changing a task's SortString value should never break a reference to the task.*</br></br>Intended to be used for sorting tasks in a checklist.</br>May change arbitrarily when we re-order tasks.</br>Suggest 4-digit number.</br></br>*Note: Initially tasks had SortString values separated by 10 - 0010, 0020 etc. - to allow room for new tasks to be inserted in between existing ones. If you wish to insert your task between existing tasks you are welcome to choose a number between two existing tasks, e.g. to have a task sorted between the tasks with SortString 0120 and 0130, you could give yours a SortString value of 0125. Later, to insert yet another task before that one, the next task could be given a SortString value of 0123, and so on. You may change the SortString of other tasks if you have to, in order to create space in the sequence for your task. Occasionally we may revise some or all SortString values to create more space. Do not rely on the SortString of any task remaining constant over time.* |
     | Description | A short description of the task, typically no more than 200-300 characters. If you need a longer description, consider whether this task should be split into two or more smaller tasks. |
     | Tags | A comma-separated list of tags, all on one line, used for filtering tables of content in the checklist.md and other documents generated from templates. The order of these tags is not important.</br>Other tag groups may be added in future, and tasks may be given tags from a new tag group retrospectively.</br></br>Include exactly one tag from each of the following **required** groups:</br><ul><li>`Initial` or `Regular` (temporal adjective tag - if you intend both make two tasks, one for 'define how to do it' and one for 'do it')</li><li>`Backlog`, `InProgress`, `Review` or `Done` status tag for tracking progress in task development. Only tasks tagged as `Done` appear in the main [checklist](checklist.md).</li><li>`Legacy` or `New` for the tasks's provenance. For tasks that had equivalents in earlier checklists for SAS Viya 3 and SAS 9. The detail of these tasks in SAS Viya 2020.1 and later may differ very significantly from their earlier equivalents.</li></ul> |
-    | Authors | A comma-separated list full names (*firstname lastname*) of authors who wrote a substantial portion of the words in the task, even if they were copied here from another source. Use this tag - with the author's consent if possible - to acknowledge someone's contribution to the task content and avoid taking undue credit for another author's work. Adding your own name is optional - omit yours if you wish, though git and GitHub can generally identify your contibution to some extent. You should not add your name to the authors list if you only made minor edits to a task, e.g. for spelling, grammar, punctuation, consistency or formatting. It is not necessary to name the authors of material you reference from your task. |
+    | Authors | A comma-separated list full names (*firstname lastname*) of authors who wrote a substantial portion of the words in the task, even if they were copied here from another source. Use this tag - with the author's consent if possible - to acknowledge someone's contribution to the task content and avoid taking undue credit for another author's work. Adding your own name is optional - omit yours if you wish, though your username in git's commit history might enable someone to identify your contribution. You should not add your name to the authors list if you only made minor edits to a task, e.g. for spelling, grammar, punctuation, consistency or formatting. It is not necessary to name the authors of material you reference from your task. |
     | Frequency | For all regular tasks, and regular tasks only, specify when we would suggest the task be done. Keep as short as possible. Example values: Hourly, Daily, Weekly, Monthly, Quarterly, Annually, When troubleshooting. Other values are okay, but 'as needed' is a bit too vague: make a suggestion. The reader is free to disagree. |
-    | Topic | One of:</br><ul><li>CAS</li><li>Kubernetes & IT Admin</li><li>Observability</li><li>Organization & Governance</li><li>PostgreSQL</li><li>SAS Administration</li><li>SAS Programming Run-time</li></ul> |
+    | Topic | One of:</br><ul><li>CAS</li><li>Kubernetes & IT Admin</li><li>Observability</li><li>Organization & Governance</li><li>PostgreSQL</li><li>SAS Administration</li><li>SAS Programming Run-time</li></ul>*Note: New topics should be approached with care, because topics have their own tables in the tasks_by_topic_template.md (so you should edit that template if you use a new topic), and topics with a single task in them are of questionable value. Tasks often span topics - pick the one which suits the task best; there are not so many tasks that a task spanning two topics but listed under only one of them will likely be overlooked by a diligent reader.*|
     | Essential | One of</br><ul><li>Yes</li><li>-</li></ul>The value '-' means recommended but not absolutely essential, but at a glance it is easier to see the rows with a yes if the rest are marked '-' instead of 'No' or 'Recommended'. |
 
 1. **[Optional]** A `When:` line.
 
-    > When should an administrator (or someone they coordinate with) do this task? A `When:` line is optional but usually included. Omit it if there is no particular time you think the task should be done. However, there is a 'best' time to perform most tasks in the checklist. If you do not include a 'When:' line, someone else may do so later.
-    >
-    > Examples:
-    > * When: After platform changes
-    > * When: Before and/or after platform changes and in tandem with organizational changes
-    > * When: At the beginning and end of a period of troubleshooting activity
-    > * When: Regularly per housekeeping schedule
-    >
-    > You are free to describe when the task should be done in your own words, if none of the examples above are appropriate to your task.
+    When should an administrator (or someone they coordinate with) do this task? A `When:` line is optional but usually included. Omit it if there is no particular time you think the task should be done. However, there is a 'best' time to perform most tasks in the checklist. If you do not include a 'When:' line, someone else may do so later.
+
+    Examples:
+    * When: After platform changes
+    * When: Before and/or after platform changes and in tandem with organizational changes
+    * When: At the beginning and end of a period of troubleshooting activity
+    * When: Regularly per housekeeping schedule
+
+    You are free to describe when the task should be done in your own words, if none of the examples above are appropriate to your task.
 
 1. **[Optional]**: Above each of two or more separate ideas, a level 2 to 6 [ATX Heading](https://github.github.com/gfm/#atx-headings).
 
@@ -104,15 +108,15 @@ Each task file should have these required and optional features:
 
 1. **[Optional]** One or more `See also:` lines.
 
-    > Your task's body text will usually contain one or more references to other resources. If you like to include links in your text that is fine. But a `See also:` line is another option, which may suit tasks which refer to lists of resources when you do not need to write a story about them. Include a word or short phrase inside square brackets at the end of the link to indicate what sort of resource it is.
-    >
-    > Here are some examples:
-    >
-    > * See also: [onboard_and_offboard_users.md](./onboard_and_offboard_users.md) [Task]
-    > * See also: The [Jobs and Flows Page](https://documentation.sas.com/doc/en/sasadmincdc/default/evfun/n0b9cf8ru47gp6n1lvamxqwbr3by.htm) in the SAS Viya Environment Manager User's Guide [Doc]
-    > * See also: [SAS Demo | Modify non-Default CAS Server Topology in Your Viya Deployment](https://www.youtube.com/watch?v=WxUXaTtZpSE) [Video]
-    >
-    > A `See also:` line right before the link back to the top-level checklist is a good way to 'pair' your task with a related task, e.g. between a pair of tasks where there is a one-time initial 'set a thing up or learn how to do a thing' task, and an corresponding regular 'do the thing' task. Each task can have a `See also:` line referring the reader to the other in the pair.
+    Your task's body text will usually contain one or more references to other resources. If you like to include links in your text that is fine. But a `See also:` line is another option, which may suit tasks which refer to lists of resources when you do not need to write a story about them. Include a word or short phrase inside square brackets at the end of the link to indicate what sort of resource it is.
+
+    Here are some examples:
+
+    * See also: [onboard_and_offboard_users.md](./onboard_and_offboard_users.md) [Task]
+    * See also: The [Jobs and Flows Page](https://documentation.sas.com/doc/en/sasadmincdc/default/evfun/n0b9cf8ru47gp6n1lvamxqwbr3by.htm) in the SAS Viya Environment Manager User's Guide [Doc]
+    * See also: [SAS Demo | Modify non-Default CAS Server Topology in Your Viya Deployment](https://www.youtube.com/watch?v=WxUXaTtZpSE) [Video]
+
+    A `See also:` line right before the link back to the top-level checklist is a good way to 'pair' your task with a related task, e.g. between a pair of tasks where there is a one-time initial 'set a thing up or learn how to do a thing' task, and an corresponding regular 'do the thing' task. Each task can have a `See also:` line referring the reader to the other in the pair.
 
 1. **[Required]**: A link back to the top-level checklist.md. The Markdown for this link looks like this:
 
@@ -124,4 +128,4 @@ If your task references SAS documentation, edit URLs at `go.documentation.sas.co
 
 ### Links must work outside SAS
 
-All URLs you link to should be accessible outside SAS. Avoid linking to pages on SAS-internal sites, such as `sww.sas.com`.
+This project is public. All URLs you link to should be accessible outside SAS. Do not link to pages or other resources on SAS-internal sites, such as `sww.sas.com`.
