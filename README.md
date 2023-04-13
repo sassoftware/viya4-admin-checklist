@@ -41,7 +41,7 @@ In the task descriptions, the words server or service always mean one or more pr
 
 [//]: # (**Optional**. If applicable to your project, list new features that users need to be aware of. This section might supplement the Changelog file from the repository and only highlight important changes.)
 
-Everything is new. This Checklist project is under initial development.
+Everything is new.
 
 [Checklists of administration tasks for previous versions of SAS](#previous-versions) were published as PDF or Word documents.
 
@@ -78,7 +78,7 @@ This project does contain some code examples, but it mostly consists of recommen
 
 If you have not read it already, begin by reading the [Overview](#overview) in this README, followed by [How to use this Checklist](how_to_use_this_checklist.md).
 
-You may be interested in understanding the [intended audience](intended_audience.md).
+This project is written for a specific [intended audience](intended_audience.md) of SAS and IT administrators, and related roles.
 
 Read about SAS Viya Administration Training and Certification in the [Additional Resources](#additional-resources) section of this README.
 
@@ -117,11 +117,11 @@ For **contributors**, or users making a their own custom version of the project,
 
 [//]: # (**Required**. Use the default text below if you accept contributions. If you do not accept contributions \(e.g., a samples project\), note that here.)
 
-> We welcome your contributions! Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on how to submit contributions to this project.
->
-> [CONTRIBUTING.md](CONTRIBUTING.md) has instructions for how to write
-> a task and populate an HTML comment block with appropriate 'metadata' so the
-> task appears correctly in the main checklist.md and other lists of tasks.
+We welcome your contributions! Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on how to submit contributions to this project.
+
+[CONTRIBUTING.md](CONTRIBUTING.md) has instructions for how to write
+a task and populate an HTML comment block with appropriate 'metadata' so the
+task appears correctly in the main checklist.md and other lists of tasks.
 
 ## License
 
@@ -150,9 +150,11 @@ Familiarize yourself with **at least the topics** in the version of these docume
 
 The [Administration and Deployment](https://communities.sas.com/t5/SAS-Communities-Library/tkb-p/library/label-name/administration%20and%20deployment) label in the SAS Communities Library allows you to find a large selection of searchable blog posts and articles written by SAS Viya experts. High quality content is regularly posted there by members of the [SAS Global Enablement and Learning (GEL)](https://communities.sas.com/t5/tag/GEL/tg-p/board-id/library) team.
 
+We find the [SAS Viya 4 Resource Guide]( https://github.com/sassoftware/viya4-resource-guide) very useful. It describes a set of linked open-source projects (like this one) that support the pre-installation, deployment, and subsequent monitoring and management of SAS Viya platform software.
+
 Familiarize yourself with available [SAS Viya training from SAS](https://support.sas.com/training/us/paths/index.html). The training page can help you find training material on getting started, administration, data management, programming and analytics, SAS Visual Analytics on SAS Viya, and specific SAS Viya solutions such as SAS Visual Investigator. Courses can be taught in a classroom, as a live web class, or as self-paced e-learning.
 
-Are you a SAS Viya administrator? If so, you should become familiar with all administration interfaces to SAS Viya:
+SAS Viya administrators should be familiar with all administration interfaces to SAS Viya:
 * Learn what each of the pages in [SAS Environment Manager](https://go.documentation.sas.com/doc/en/sasadmincdc/v_023/evfun/titlepage.htm) does.
 * Learn how to use the [SAS Viya Command-Line Interface](https://go.documentation.sas.com/doc/en/sasadmincdc/v_023/calcli/titlepage.htm).
 
