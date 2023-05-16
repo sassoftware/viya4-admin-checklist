@@ -7,7 +7,7 @@ SortString: 0340
 Description: Configure CAS allowlist for user-defined CAS libraries
 Tags: Initial,New,Done
 Topic: CAS
-Essential: -
+Essential: Yes
 Authors: Scott McCauley
 -->
 When: Before user access, as needed

@@ -7,7 +7,7 @@ SortString: 0010
 Description: Automate the process of creating and configuring your SAS Viya deployment
 Tags: Initial,New,Done
 Topic: Kubernetes & IT Admin
-Essential: Yes
+Essential: -
 Authors: David Stern
 -->
 When: During deployment, post-deployment, and after platform changes

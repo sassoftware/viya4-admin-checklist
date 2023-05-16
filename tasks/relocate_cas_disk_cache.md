@@ -7,7 +7,7 @@ SortString: 0330
 Description: Relocate the CAS_DISK_CACHE for CAS servers
 Tags: Initial,New,Done
 Topic: CAS
-Essential: Yes
+Essential: -
 Authors: Scott McCauley
 -->
 When: After deployment

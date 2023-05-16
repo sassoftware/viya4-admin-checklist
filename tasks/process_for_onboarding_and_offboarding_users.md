@@ -7,7 +7,7 @@ SortString: 0300
 Description: Document any steps that must be performed when new users are onboarded and offboarded
 Tags: Initial,Legacy,Done
 Topic: SAS Administration
-Essential: -
+Essential: Yes
 Authors: David Stern,Michael Erickson
 -->
 When: After platform changes
