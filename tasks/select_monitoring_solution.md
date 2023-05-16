@@ -7,7 +7,7 @@ SortString: 0190
 Description: Choose a log and metric monitoring and alerting solution
 Tags: Initial,New,Done
 Topic: Observability
-Essential: Yes
+Essential: -
 Authors: David Stern
 -->
 When: After platform changes

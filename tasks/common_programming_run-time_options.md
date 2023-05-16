@@ -7,7 +7,7 @@ SortString: 0370
 Description: Configure statements in SAS Programming Run-Time Autoexec code blocks, to set commonly used SAS options for macro programming, performance tuning, use of mail servers and pre-assigning SAS libraries.
 Tags: Initial,New,Done
 Topic: SAS Programming Run-time
-Essential: -
+Essential: Yes
 Authors: David Stern
 -->
 When: After platform changes

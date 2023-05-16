@@ -7,7 +7,7 @@ SortString: 0240
 Description: Define a set of tests to validate that your SAS Viya deployment is functioning correctly
 Tags: Initial,New,Done
 Topic: SAS Administration
-Essential: -
+Essential: Yes
 Authors: David Stern
 -->
 When: After platform changes
