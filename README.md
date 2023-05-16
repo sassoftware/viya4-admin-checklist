@@ -1,6 +1,6 @@
 ![Global Enablement & Learning](/img/gel_banner_logo_tech-partners.jpg)
 
-# SAS Viya Administration Checklist: README.md
+# SAS Viya Administration Checklist
 
 This project is for SAS Viya 2020.1 and later. See [Previous Versions](#previous-versions) for earlier versions of SAS.
 
@@ -131,8 +131,8 @@ task appears correctly in the main checklist.md and other lists of tasks.
 
 There are two previous versions of this checklist, for earlier versions of SAS:
 
-* Checklist of SAS Viya 3 Administration Tasks: https://support.sas.com/resources/papers/checklist-sas-viya-administration-tasks.pdf
-* Checklist of SAS 9 Administration Tasks: https://support.sas.com/resources/papers/Platform-Administration-Tasks.pdf
+* Checklist of SAS Viya 3 Administration Tasks: [https://support.sas.com/resources/papers/checklist-sas-viya-administration-tasks.pdf](https://support.sas.com/resources/papers/checklist-sas-viya-administration-tasks.pdf)
+* Checklist of SAS 9 Administration Tasks: [https://support.sas.com/resources/papers/Platform-Administration-Tasks.pdf](https://support.sas.com/resources/papers/Platform-Administration-Tasks.pdf)
 
 ## Additional Resources
 
@@ -145,6 +145,7 @@ There are two previous versions of this checklist, for earlier versions of SAS:
 \* Other SAS Documentation \(Tech Support, Education\))
 
 Familiarize yourself with **at least the topics** in the version of these documents that corresponds to your release of SAS Viya:
+
 * The [SAS Viya Operations Guide](https://go.documentation.sas.com/doc/en/itopscdc/v_023/itopswlcm/home.htm?homeOnFail), which includes the [SAS Viya: Deployment Guide](https://go.documentation.sas.com/doc/en/itopscdc/v_023/dplyml0phy0dkr/titlepage.htm)
 * The [SAS Viya Administration Guide](https://go.documentation.sas.com/doc/en/sasadmincdc/v_023/sasadminwlcm/home.htm). This will likely have the most content of interest to a reader of an Administration Checklist.
 
@@ -155,6 +156,7 @@ We find the [SAS Viya 4 Resource Guide]( https://github.com/sassoftware/viya4-re
 Familiarize yourself with available [SAS Viya training from SAS](https://support.sas.com/training/us/paths/index.html). The training page can help you find training material on getting started, administration, data management, programming and analytics, SAS Visual Analytics on SAS Viya, and specific SAS Viya solutions such as SAS Visual Investigator. Courses can be taught in a classroom, as a live web class, or as self-paced e-learning.
 
 SAS Viya administrators should be familiar with all administration interfaces to SAS Viya:
+
 * Learn what each of the pages in [SAS Environment Manager](https://go.documentation.sas.com/doc/en/sasadmincdc/v_023/evfun/titlepage.htm) does.
 * Learn how to use the [SAS Viya Command-Line Interface](https://go.documentation.sas.com/doc/en/sasadmincdc/v_023/calcli/titlepage.htm).
 

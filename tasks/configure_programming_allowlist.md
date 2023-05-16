@@ -7,7 +7,7 @@ SortString: 0410
 Description: Configure SAS Programming Run-Time for user-defined paths
 Tags: Initial,New,Done
 Topic: SAS Programming Run-time
-Essential: -
+Essential: Yes
 Authors: David Stern
 -->
 When: Before user access, as needed

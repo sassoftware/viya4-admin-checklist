@@ -7,7 +7,7 @@ SortString: 0360
 Description: Move SAS Work and other Programming Run-Time Temporary Files to a better location than the default
 Tags: Initial,Legacy,Done
 Topic: SAS Programming Run-time
-Essential: Yes
+Essential: -
 Authors: David Stern
 -->
 When: After platform changes
