@@ -31,7 +31,6 @@ def toc(fileOut,strProjectRootPath,strTaskSubdirectory,strTagFilter,intSortColum
             # Initialize vars
             strSortString="Not found"
             strTaskTitle="Not found"
-            strSortString="Not found"
             strTaskDescription="Not found"
             strTaskTags="Not found"
             strTaskFreq=""

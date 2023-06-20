@@ -29,7 +29,7 @@ If home-directory (CASUSER path location) access is desired in CAS, host launch 
 
 Resources:
 
-* [Sample 68620: Create user home directories from the identities service in SAS® Viya® 2020.x using a script](**https://support.sas.com/kb/68/620.html) [Sample Script]
+* [Sample 68620: Create user home directories from the identities service in SAS® Viya® 2020.x using a script](https://support.sas.com/kb/68/620.html) [Sample Script]
 * [SAS Viya: making user home directories available to compute](https://communities.sas.com/t5/SAS-Communities-Library/SAS-Viya-making-user-home-directories-available-to-compute/ta-p/717561) [Blog]
 * [CAS Enable Host Launch](https://go.documentation.sas.com/doc/en/sasadmincdc/default/dplyml0phy0dkr/n08u2yg8tdkb4jn18u8zsi6yfv3d.htm#n07xq4q4omccg0n1v4lj63i57r62) [Doc]
 * [Indentity Management: The CASHostAccountRequired Custom Group](https://go.documentation.sas.com/doc/en/sasadmincdc/default/calids/p0ata1oqy9v7nan188h1k254doxq.htm#p1b0uixk221q3jn19ztuitir62gm) [Doc]
