@@ -22,6 +22,7 @@ If users interact with the file system from the SAS Viya, the UID and GID that i
 
 Resources:
 
+* [SAS Viya and POSIX attributes (UID and GID)](https://communities.sas.com/t5/SAS-Communities-Library/SAS-Viya-and-POSIX-attributes-UID-and-GID/ta-p/879229#:~:text=POSIX%20attributes%20like%20UID%20and%20GID%2C%20and%20Secondary%20GIDs%20are,files%20on%20shared%20file%20systems.)
 * [How to Manage UIDs and GIDs with the Identities Service](https://go.documentation.sas.com/doc/en/sasadmincdc/default/calids/p0sgep5em2jdl1n1rbc9eqdim05t.htm)[Doc]
 * [SAS Viya 2022.10 UID and GID Changes](https://communities.sas.com/t5/SAS-Communities-Library/SAS-Viya-2022-10-UID-and-GID-Changes/ta-p/841130)[Blog]
 
