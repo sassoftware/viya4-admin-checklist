@@ -50,6 +50,11 @@ In addition to the suggested validation steps listed above, you should add tests
 * Can you create a model using SAS Model Manager or SAS Visual Analytics? Can you run the model in SAS Model Studio? Can you create a project in SAS Model Manager and can you add your new model to it? Can you Create a model test in Model Manager, and score it? Can you publish the model to SAS Micro Analytic Service (MAS)? Can you clean up all validation assets you just created?
 * Do you see expected messages in the logs?
 
+## Automated Validation with the pyviyatools
+
+ValidateViya is a pyviyatool that runs a series of tests on a Viya environment, validating that it is running as expected. validateviya has a modular design, allowing for the creation of custom tests, the alteration of existing tests, and the removal of unneeded tests. Checkout the [vaildateviya User Guide](https://github.com/sassoftware/pyviyatools/blob/master/validateviya-manual.md) in the [pyviyatools](https://github.com/sassoftware/pyviyatools).
+
+
 See also:
 
 * [Select Log & Metric Monitoring and Alerting Solution](./select_monitoring_solution.md) [Task]

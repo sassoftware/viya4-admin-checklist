@@ -5,7 +5,7 @@
 <!--
 SortString: 0610
 Description: Periodically Run an Inventory Scan on the Viya Environment
-Tags: New,Regular,InProgress
+Tags: New,Regular,Done
 Topic: SAS Administration
 Essential: -
 Authors: Gerry Nelson
@@ -25,6 +25,6 @@ environment and a scan and comparison after any major changes.
 Resources:
 
 * [Peforming an Inventory Scan](https://go.documentation.sas.com/doc/en/sasadmincdc/default/calbr/p1lov9hvcr7mn0n1dpf7d79hlrz6.htm#n04vbjmes48b0en1wy4kfuahs52n) [Doc]
-* [SAS Viya Inventory Scan and Comparison](ComingSoon)[Blog]
+* [SAS Viya Inventory Scan and Comparison](https://communities.sas.com/t5/SAS-Communities-Library/SAS-Viya-Inventory-scan-and-reporting/ta-p/885801)[Blog]
 
 [Back to checklist](../checklist.md)
