@@ -4,7 +4,7 @@
 
 This project is for SAS Viya 2020.1 and later. See [Previous Versions](#previous-versions) for earlier versions of SAS.
 
-> **[Direct Link To Checklist](./checklist.md)**
+> **[Direct Link To Checklist](checklist.md)**
 
 ## Table of Contents of this README.md  <!-- omit in toc -->
 
