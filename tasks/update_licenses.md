@@ -13,9 +13,9 @@ Frequency: Annually
 -->
 When: Before your license expires
 
-Usage of SAS Viya software is controlled by a license file. The license is deployed at the time of initial deployment. When upgrading your platform to a new cadence version, you are required to download new deployment assets, which will contain a new license. It may ocassionally be necessary to renew the license outside of the update process; for example, when adding or removing products from your SAS order, or when you wish to extend expiration dates on existing products without updating your platform to a new version.
+Usage of SAS Viya software is controlled by a license file. The license is deployed at the time of initial deployment. Deployment assets from http://my.sas.com include a license file in JWT format. Licenses can also be downloaded separately from the portal.
 
-Deployment assets from my.sas.com include a license file in JWT format. Licenses can also be downloaded separately from the portal.
+It may ocassionally be necessary to renew the license outside of the update process; for example, when adding or removing products from your SAS order, or when you wish to extend expiration dates on existing products without updating your platform to a new version. In such cases, a new order will be created, and a new license will be generated and delivered in the deployment assets for the new order number. 
 
 License updates require changes to your Kubernetes cluster, and elevated cluster permissions are therefore required.
 
