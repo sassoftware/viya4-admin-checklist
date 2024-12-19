@@ -4,7 +4,7 @@
 
 > Please read the **[Project README](./README.md)** if you have not done so already.
 
-This checklist lists both [initial](#initial-task-checklist) tasks, and [regular](#regular-task-checklist) tasks.
+This checklist lists both [initial](#initial-task-checklist) tasks, and [regular](#regular-task-checklist) tasks. The regular tasks are then also presented in a [task schedule](#regular-task-schedule), indicating at a glance a suggested frequency at which each regular task might be performed.
 
 Alternatively, view the same [tasks grouped by topic](./tasks_by_topic.md).
 
@@ -39,8 +39,14 @@ regular scheduled basis.
 
 ## Regular Task Checklist
 
-This table lists smaller tasks that should be repeated on a regular basis. See the suggested frequency table for an example of when you might run each of these tasks.
+This table lists smaller tasks that should be repeated on a regular basis. See the [Regular Task Schedule](#regular-task-schedule) which follows this table for an example of when you might run each of these tasks.
 
 @_TOC_ strTagFilter=Regular;Done,intSortColumn=0,boolReverse=False,boolShowTags=False,boolShowFreq=True,boolShowTopic=True,boolShowEssential=True
+
+## Regular Task Schedule
+
+This table shows the same regular tasks as the [Regular Task Checklist](#regular-task-checklist) table above, but is focussed more on how often we suggest each regular task might be run.
+
+@_RTFREQ_ strTagFilter=Regular;Done,intSortColumn=0,boolReverse=False
 
 @_#_ IMPORTANT: This template should end with a newline

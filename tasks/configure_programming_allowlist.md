@@ -40,9 +40,9 @@ context autoexec:
     session enters the locked down state, access to the file system paths they
     reference is allowed through the resulting fileref or libref.
 
-1. Add paths or specific files to the lockdown allowlist, which allows non-Admin
-1. users to later define their own references to these paths or files, using
-1. fileref or library declarations in their own code. For example:
+2. Add paths or specific files to the lockdown allowlist, which allows non-Admin
+   users to later define their own references to these paths or files, using
+   fileref or library declarations in their own code. For example:
 
     ```sas
     lockdown path='/path/to/directory1';
