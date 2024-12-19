@@ -4,7 +4,7 @@
 
 > Please read the **[Project README](./README.md)** if you have not done so already.
 
-This checklist lists both [initial](#initial-task-checklist) tasks, and [regular](#regular-task-checklist) tasks. The regular tasks are then also presented in a task schedule, indicating at a glance a suggested frequency at which each regular task might be performed.
+This checklist lists both [initial](#initial-task-checklist) tasks, and [regular](#regular-task-checklist) tasks. The regular tasks are then also presented in a [task schedule](#regular-task-schedule), indicating at a glance a suggested frequency at which each regular task might be performed.
 
 Alternatively, view the same [tasks grouped by topic](./tasks_by_topic.md).
 
@@ -113,28 +113,28 @@ This table shows the same regular tasks as the [Regular Task Checklist](#regular
 
 | # ▴ | Title | Annually | Quarterly | Monthly | Weekly | Daily | Other |
 |---|---|:-:|:-:|:-:|:-:|:-:|---|
-| 0460 | [Renew your SAS Viya License](tasks/update_licenses.md) | * |  |  |  |  |  |
-| 0470 | [Update the SAS Viya CLI](tasks/update_sas_viya_cli.md) |  | * |  |  |  |  |
+| 0460 | [Renew your SAS Viya License](tasks/update_licenses.md) | ◎ |  |  |  |  |  |
+| 0470 | [Update the SAS Viya CLI](tasks/update_sas_viya_cli.md) |  | ◎ |  |  |  |  |
 | 0480 | [Renew your OIDC client secret](tasks/renew_oidc_client_secret.md) |  |  |  |  |  | When secret changes |
 | 0490 | [Update External Credentials](tasks/update_external_credentials.md) |  |  |  |  |  | When credentials change |
-| 0500 | [Check the Status of SAS services](tasks/check_service_status.md) |  |  |  |  | * |  |
-| 0510 | [Monitor Memory, CPU, Network, and Disk Throughput Usage](tasks/monitor_usage.md) |  |  |  |  | * |  |
-| 0520 | [Monitor Log Messages](tasks/monitor_logs.md) |  |  |  |  | * |  |
-| 0530 | [Examine the User Activity Report](tasks/examine_user_activity_report.md) |  |  |  | * |  |  |
+| 0500 | [Check the Status of SAS services](tasks/check_service_status.md) |  |  |  |  | ◎ |  |
+| 0510 | [Monitor Memory, CPU, Network, and Disk Throughput Usage](tasks/monitor_usage.md) |  |  |  |  | ◎ |  |
+| 0520 | [Monitor Log Messages](tasks/monitor_logs.md) |  |  |  |  | ◎ |  |
+| 0530 | [Examine the User Activity Report](tasks/examine_user_activity_report.md) |  |  |  | ◎ |  |  |
 | 0540 | [Change log levels](tasks/change_log_levels.md) |  |  |  |  |  | When troubleshooting |
-| 0550 | [Monitor Storage Space](tasks/monitor_storage_space.md) |  |  |  | * |  |  |
-| 0560 | [Monitor Observability Storage](tasks/monitor_observabilty_storage.md) |  |  |  | * |  |  |
+| 0550 | [Monitor Storage Space](tasks/monitor_storage_space.md) |  |  |  | ◎ |  |  |
+| 0560 | [Monitor Observability Storage](tasks/monitor_observabilty_storage.md) |  |  |  | ◎ |  |  |
 | 0570 | [Stop and Start SAS Viya's Monitoring and Logging components](tasks/stop_and_start_sas_viya_monitoring_for_kubernetes.md) |  |  |  |  |  | When not in use |
-| 0580 | [Onboard and Offboard Users](tasks/onboard_and_offboard_users.md) |  |  |  | * |  |  |
-| 0590 | [Keep your Software Current](tasks/keep_software_current.md) |  |  | * |  |  |  |
-| 0600 | [Regularly Re-Validate your SAS Viya Deployment](tasks/validate_deployment_regularly.md) |  |  |  | * |  |  |
-| 0610 | [Periodically Run an Inventory Scan on the Viya Environment](tasks/inventory_scan.md) |  |  | * |  |  |  |
+| 0580 | [Onboard and Offboard Users](tasks/onboard_and_offboard_users.md) |  |  |  | ◎ |  |  |
+| 0590 | [Keep your Software Current](tasks/keep_software_current.md) |  |  | ◎ |  |  |  |
+| 0600 | [Regularly Re-Validate your SAS Viya Deployment](tasks/validate_deployment_regularly.md) |  |  |  | ◎ |  |  |
+| 0610 | [Periodically Run an Inventory Scan on the Viya Environment](tasks/inventory_scan.md) |  |  | ◎ |  |  |  |
 | 0620 | [Stop and Start SAS Viya software](tasks/stop_and_start_viya.md) |  |  |  |  |  | When not in use |
-| 0630 | [Inspect the Status of Scheduled Jobs](tasks/inspect_job_status.md) |  |  |  |  | * |  |
-| 0640 | [Test the Process to Restore From Backups](tasks/test_restore_process.md) |  |  | * |  |  |  |
-| 0650 | [Configure CAS server startup to load data](tasks/cas_server_startup.md) |  |  | * |  |  |  |
+| 0630 | [Inspect the Status of Scheduled Jobs](tasks/inspect_job_status.md) |  |  |  |  | ◎ |  |
+| 0640 | [Test the Process to Restore From Backups](tasks/test_restore_process.md) |  |  | ◎ |  |  |  |
+| 0650 | [Configure CAS server startup to load data](tasks/cas_server_startup.md) |  |  | ◎ |  |  |  |
 | 0660 | [Monitor Compute Sessions](tasks/monitor_compute_sessions.md) |  |  |  |  |  | Daily or as often as necessary |
-| 0670 | [Manage content stored in PostgreSQL](tasks/manage_postgresql_content.md) |  |  | * |  |  |  |
-| 0680 | [Maintain SAS Infrastructure Data Server](tasks/maintain_postgresql_server.md) |  |  | * |  |  |  |
+| 0670 | [Manage content stored in PostgreSQL](tasks/manage_postgresql_content.md) |  |  | ◎ |  |  |  |
+| 0680 | [Maintain SAS Infrastructure Data Server](tasks/maintain_postgresql_server.md) |  |  | ◎ |  |  |  |
 
-</br>Generated by build_from_template.py on: 19 Dec 2024 13:05:05.</br>
+</br>Generated by build_from_template.py on: 19 Dec 2024 13:58:00.</br>

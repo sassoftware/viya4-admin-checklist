@@ -17,6 +17,7 @@
 
 from os import listdir
 from os.path import isfile, join
+strBlockCharacter="◎"
 
 def toc(fileOut,strProjectRootPath,strTaskSubdirectory,strTagFilter,intSortColumn,boolReverse,boolShowTags,boolShowFreq,boolShowTopic,boolShowEssential,strTopicFilter):
 
@@ -366,15 +367,15 @@ def rtfreq(fileOut,strProjectRootPath,strTaskSubdirectory,strTagFilter,intSortCo
         strCol6Value = ''
         strCol7Value = ''
         if lstRTFREQLine[4]=='Annually':
-            strCol2Value = '*'
+            strCol2Value = strBlockCharacter
         elif lstRTFREQLine[4]=='Quarterly':
-            strCol3Value = '*'
+            strCol3Value = strBlockCharacter
         elif lstRTFREQLine[4]=='Monthly':
-            strCol4Value = '*'
+            strCol4Value = strBlockCharacter
         elif lstRTFREQLine[4]=='Weekly':
-            strCol5Value = '*'
+            strCol5Value = strBlockCharacter
         elif lstRTFREQLine[4]=='Daily':
-            strCol6Value = '*'
+            strCol6Value = strBlockCharacter
         else:
           # Other - show the entire task Frequency string, not just an asterisk
           strCol7Value = lstRTFREQLine[4]

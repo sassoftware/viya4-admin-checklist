@@ -4,7 +4,7 @@
 
 > Please read the **[Project README](./README.md)** if you have not done so already.
 
-This checklist lists both [initial](#initial-task-checklist) tasks, and [regular](#regular-task-checklist) tasks. The regular tasks are then also presented in a task schedule, indicating at a glance a suggested frequency at which each regular task might be performed.
+This checklist lists both [initial](#initial-task-checklist) tasks, and [regular](#regular-task-checklist) tasks. The regular tasks are then also presented in a [task schedule](#regular-task-schedule), indicating at a glance a suggested frequency at which each regular task might be performed.
 
 Alternatively, view the same [tasks grouped by topic](./tasks_by_topic.md).
 
