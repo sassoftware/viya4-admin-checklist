@@ -1,6 +1,6 @@
 ![Global Enablement & Learning](/img/gel_banner_logo_tech-partners.jpg)
 
-# Use customer-provided certificates
+# Update TLS certificates
 
 <!--
 SortString: 0050
