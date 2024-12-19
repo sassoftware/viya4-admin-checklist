@@ -37,7 +37,7 @@ import sys
 import contextlib
 import os
 import datetime
-from checklistsharedfunctions import toc
+from checklistsharedfunctions import toc, rtfreq
 from distutils import util
 
 debug=True
@@ -138,7 +138,42 @@ def build_from_template(strTemplateFilePathIn,strFilePathOut):
                         # Call the toc function defined in checklistsharedfunctions to actually generate a TOC from the tasks files
                         # print('strTagFilter:'+strTagFilter+', intSortColumn:'+str(intSortColumn)+', boolReverse:'+str(boolReverse)+' and type of boolReverse is '+str(type(boolReverse)))
                         toc(fileOut, strProjectRootPath, strTaskSubdirectory, strTagFilter, intSortColumn, boolReverse, boolShowTags,boolShowFreq, boolShowTopic, boolShowEssential,strTopicFilter)
+                    elif line.startswith('@_RTFREQ_'):
+                        # Regular task frequency table
 
+                        # Default sort and filter
+                        strTagFilter="Regular"
+                        intSortColumn=0 # 0:SortString, 1:Title
+                        boolReverse=False
+                        boolShowEssential=False
+                        strTopicFilter=""
+
+                        # Parameters passed after the '@_RTFREQ_' can override the default sort and filter
+                        strRTFREQParameters=line[len('@_RTFREQ_ '):].rstrip()
+                        lstRTFREQParameters=strRTFREQParameters.split(',')
+                        # print('Found a RTFREQ placeholder with '+str(len(lstRTFREQParameters))+' parameters: '+strRTFREQParameters)
+                        for strRTFREQParameter in lstRTFREQParameters:
+                            lstRTFREQParameterNameAndValue=strRTFREQParameter.split('=')
+                            strParameterName=lstRTFREQParameterNameAndValue[0]
+                            anyParameterValue=lstRTFREQParameterNameAndValue[1]
+                            # print('Parameter name: '+strParameterName+', Value: '+anyParameterValue)
+                            # Validate parameter name and value, set sort and filter if valid
+                            if strParameterName == 'strTagFilter':
+                                strTagFilter=anyParameterValue # May be several tags separated by semicolons
+                                # print('strTagFilter: '+strTagFilter)
+                            elif strParameterName == 'intSortColumn' and anyParameterValue.isnumeric():
+                                intSortColumn=int(anyParameterValue)
+                            elif strParameterName == 'boolReverse' and (anyParameterValue=='True' or anyParameterValue=='False'):
+                                boolReverse=bool(util.strtobool(anyParameterValue))
+                            elif strParameterName == 'boolShowEssential' and (anyParameterValue=='True' or anyParameterValue=='False'):
+                                boolShowEssential=bool(util.strtobool(anyParameterValue))
+                            elif strParameterName == 'strTopicFilter':
+                                strTopicFilter=anyParameterValue # May be several tags separated by semicolons
+                                # print('strTopicFilter: '+strTopicFilter)
+
+                        # Call the rtfreq function defined in checklistsharedfunctions to actually generate a Regular Task frequency table from the tasks files
+                        # print('strTagFilter:'+strTagFilter+', intSortColumn:'+str(intSortColumn)+', boolReverse:'+str(boolReverse)+' and type of boolReverse is '+str(type(boolReverse)))
+                        rtfreq(fileOut,strProjectRootPath,strTaskSubdirectory,strTagFilter,intSortColumn,boolReverse,boolShowEssential,strTopicFilter)
                     elif line.startswith('@_#_'):
                         # This is a comment in the template - do nothing
                         pass
