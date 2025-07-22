@@ -7,7 +7,7 @@ SortString: 0620
 Description: Ensure you can scale your SAS Viya deployment to zero, and that you can scale it back up when needed again.
 Tags: Regular,Legacy,Done
 Topic: SAS Administration
-Essential: -
+Essential: Yes
 Authors: Ajmal Farzam
 Frequency: When not in use
 -->
