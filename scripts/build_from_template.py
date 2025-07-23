@@ -90,7 +90,7 @@ def build_from_template(strTemplateFilePathIn,strFilePathOut):
 
         # Open file reference to the Checklist Template file
         with open(strTemplateFilePathIn) as fileIn:
-            with open(strFilePathOut, 'w') as fileOut:
+            with open(strFilePathOut, 'w', encoding="utf-8") as fileOut:
                 # Read fileIn line by line
                 for line in fileIn:
                     if line.startswith('@_TOC_'):
