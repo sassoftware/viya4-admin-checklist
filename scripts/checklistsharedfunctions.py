@@ -11,7 +11,7 @@
 # 03FEB2022 Creation
 # 20MAR2023 Added support for optional Frequency, Topic and Essential columns
 # 20DEC2024 Added rtfreq function to create regular task frequency table
-# 23SEP2025 Force markdown links to be built with a specific separator string, "/"
+# 23SEP2025 Force markdown links to be built with a specific separator string, "/".
 #
 # Copyright © 2022-2023, SAS Institute Inc., Cary, NC, USA.  All Rights Reserved.
 # SPDX-License-Identifier: Apache-2.0
