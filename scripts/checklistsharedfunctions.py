@@ -11,6 +11,7 @@
 # 03FEB2022 Creation
 # 20MAR2023 Added support for optional Frequency, Topic and Essential columns
 # 20DEC2024 Added rtfreq function to create regular task frequency table
+# 23SEP2025 Force markdown links to be built with a specific separator string, "/".
 #
 # Copyright © 2022-2023, SAS Institute Inc., Cary, NC, USA.  All Rights Reserved.
 # SPDX-License-Identifier: Apache-2.0
@@ -18,6 +19,7 @@
 from os import listdir
 from os.path import isfile, join
 strBlockCharacter="◎"
+strUrlSeparator="/"
 
 def toc(fileOut,strProjectRootPath,strTaskSubdirectory,strTagFilter,intSortColumn,boolReverse,boolShowTags,boolShowFreq,boolShowTopic,boolShowEssential,strTopicFilter):
 
@@ -110,7 +112,8 @@ def toc(fileOut,strProjectRootPath,strTaskSubdirectory,strTagFilter,intSortColum
                     # No topic filter
             if boolInclude:
                 # fileOut.write('Title: '+strTaskTitle+', Description: '+strTaskDescription+', Tags: '+strTaskTags+', Frequency: '+strTaskFreq+', Topic: '+strTopic+', Essential: '+strEssential+'</br>\n')
-                strTaskFileRelativePath = join(strTaskSubdirectory, strTaskFile)
+                # strTaskFileRelativePath = join(strTaskSubdirectory, strTaskFile) # Joined with '\', but needs to join with '/'
+                strTaskFileRelativePath = strTaskSubdirectory + strUrlSeparator + strTaskFile
                 # Ensure this comment matches similar comment below!
                 # lstTOCLine[0] = SortString
                 # lstTOCLine[1] = Title
@@ -298,7 +301,8 @@ def rtfreq(fileOut,strProjectRootPath,strTaskSubdirectory,strTagFilter,intSortCo
                     # No topic filter
             if boolInclude:
                 # fileOut.write('Title: '+strTaskTitle+', Description: '+strTaskDescription+', Tags: '+strTaskTags+', Frequency: '+strTaskFreq+', Topic: '+strTopic+', Essential: '+strEssential+'</br>\n')
-                strTaskFileRelativePath = join(strTaskSubdirectory, strTaskFile)
+                # strTaskFileRelativePath = join(strTaskSubdirectory, strTaskFile) # Joined with '\', but needs to join with '/'
+                strTaskFileRelativePath = strTaskSubdirectory + strUrlSeparator + strTaskFile
                 # Ensure this comment matches similar comment below!
                 # lstRTFREQLine[0] = SortString
                 # lstRTFREQLine[1] = Title
