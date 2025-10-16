@@ -2,7 +2,7 @@
 
 # SAS Viya Administration Checklist
 
-This project is for SAS Viya 2020.1 and later. See [Previous Versions](#previous-versions) for earlier versions of SAS.
+This project is for SAS Viya on Kubernetes. See [Previous Versions](#previous-versions) for earlier versions of SAS.
 
 > **[Direct Link To Checklist](checklist.md)**
 
@@ -51,7 +51,7 @@ Everything is new.
 
 For **general users**, the project is best viewed on GitHub. No installation is necessary.
 
-For **contributors**, we suggest you clone this project from GitHub and edit it using your favorite source code editor. (Please also see the [Contributing](#contributing) section of this README.)
+For **contributors**, we suggest you clone this project from GitHub and edit it using your favorite source code editor. Please also see the [Contributing](#contributing) section of this README.
 
 If you wish to contribute, you may find it helpful to be able to run Python3 in a bash terminal, so that you can run the scripts which update documents like the top-level [checklist.md](checklist.md), e.g. [scripts/build_all.py](scripts/build_all.py) (or [scripts/build_from_template.py](scripts/build_from_template.py)). By doing that, you can see if your modified tasks appear as you intend when they are listed in the [checklist.md](checklist.md) tables of tasks.
 
@@ -146,18 +146,27 @@ There are two previous versions of this checklist, for earlier versions of SAS:
 
 Familiarize yourself with **at least the topics** in the version of these documents that corresponds to your release of SAS Viya:
 
-* The [SAS Viya Operations Guide](https://go.documentation.sas.com/doc/en/itopscdc/v_023/itopswlcm/home.htm?homeOnFail), which includes the [SAS Viya: Deployment Guide](https://go.documentation.sas.com/doc/en/itopscdc/v_023/dplyml0phy0dkr/titlepage.htm)
-* The [SAS Viya Administration Guide](https://go.documentation.sas.com/doc/en/sasadmincdc/v_023/sasadminwlcm/home.htm). This will likely have the most content of interest to a reader of an Administration Checklist.
+* The [SAS Viya Platform Operations Guide](https://go.documentation.sas.com/doc/en/itopscdc/default/itopswlcm/home.htm), which includes the [SAS Viya Platform: Deployment Guide](https://go.documentation.sas.com/doc/en/itopscdc/default/dplyml0phy0dkr/titlepage.htm)
+* The [SAS Viya Platform Administration Guide](https://go.documentation.sas.com/doc/en/sasadmincdc/default/sasadminwlcm/home.htm). This will likely have the most content of interest to a reader of an Administration Checklist.
 
 The [Administration and Deployment](https://communities.sas.com/t5/SAS-Communities-Library/tkb-p/library/label-name/administration%20and%20deployment) label in the SAS Communities Library allows you to find a large selection of searchable blog posts and articles written by SAS Viya experts. High quality content is regularly posted there by members of the [SAS Global Enablement and Learning (GEL)](https://communities.sas.com/t5/tag/GEL/tg-p/board-id/library) team.
 
 We find the [SAS Viya 4 Resource Guide]( https://github.com/sassoftware/viya4-resource-guide) very useful. It describes a set of linked open-source projects (like this one) that support the pre-installation, deployment, and subsequent monitoring and management of SAS Viya platform software.
 
-Familiarize yourself with available [SAS Viya training from SAS](https://support.sas.com/training/us/paths/index.html). The training page can help you find training material on getting started, administration, data management, programming and analytics, SAS Visual Analytics on SAS Viya, and specific SAS Viya solutions such as SAS Visual Investigator. Courses can be taught in a classroom, as a live web class, or as self-paced e-learning.
+Discover the SAS Viya courses available at [learn.sas.com](https://learn.sas.com/). The course catalog there lists training material on getting started, administration, data management, programming and analytics, SAS Visual Analytics on SAS Viya, and specific SAS Viya solutions such as SAS Visual Investigator. Courses can be taken as self-paced e-learning or taught by an instructor over live web.
+
+The best way to access courses at [learn.sas.com](https://learn.sas.com/) is through **Learning Subscriptions** each of which cover a curated set of courses from beginner to expert level on subjects including:
+
+* [SAS Administration](https://learn.sas.com/totara/program/view.php?id=73)
+* [SAS Architecture and Security](https://learn.sas.com/totara/program/view.php?id=104)
+* [SAS Deployment](https://learn.sas.com/totara/program/view.php?id=111)
+* [SAS Programming](https://learn.sas.com/totara/program/view.php?id=28)
+* [SAS Visual Analytics](https://learn.sas.com/totara/program/view.php?id=31)
+* ...and many more.
 
 SAS Viya administrators should be familiar with all administration interfaces to SAS Viya:
 
-* Learn what each of the pages in [SAS Environment Manager](https://go.documentation.sas.com/doc/en/sasadmincdc/v_023/evfun/titlepage.htm) does.
-* Learn how to use the [SAS Viya Command-Line Interface](https://go.documentation.sas.com/doc/en/sasadmincdc/v_023/calcli/titlepage.htm).
+* Learn what each of the pages in the [SAS Environment Manager: User's Guide](https://go.documentation.sas.com/doc/en/sasadmincdc/default/evfun/titlepage.htm) does.
+* Learn how to use the [SAS Viya Command-Line Interface](https://go.documentation.sas.com/doc/en/sasadmincdc/default/calcli/titlepage.htm).
 
-If you have [SAS Viya Data Preparation](https://go.documentation.sas.com/doc/en/dprepcdc/v_002/dprepwlcm/home.htm?fromDefault=) products, learn how to use [SAS Data Explorer](https://go.documentation.sas.com/doc/en/dprepcdc/v_002/datahub/n01gdrmxl7lhszn1gny5h764yisv.htm), [SAS Data Studio](https://go.documentation.sas.com/doc/en/dprepcdc/v_002/datastudioadv/titlepage.htm), and [SAS Lineage](https://go.documentation.sas.com/doc/en/dprepcdc/v_002/dmlinug/titlepage.htm).
+If you have [SAS Viya Data Preparation](https://go.documentation.sas.com/doc/en/dprepcdc/default/dprepwlcm/home.htm?fromDefault=) products, learn how to use [SAS Data Explorer](https://go.documentation.sas.com/doc/en/dprepcdc/default/datahub/n01gdrmxl7lhszn1gny5h764yisv.htm), [SAS Data Studio](https://go.documentation.sas.com/doc/en/dprepcdc/default/datastudioadv/titlepage.htm), and [SAS Lineage](https://go.documentation.sas.com/doc/en/dprepcdc/default/dmlinug/titlepage.htm).
