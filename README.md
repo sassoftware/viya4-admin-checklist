@@ -155,7 +155,7 @@ We find the [SAS Viya 4 Resource Guide]( https://github.com/sassoftware/viya4-re
 
 Discover the SAS Viya courses available at [learn.sas.com](https://learn.sas.com/). The course catalog there lists training material on getting started, administration, data management, programming and analytics, SAS Visual Analytics on SAS Viya, and specific SAS Viya solutions such as SAS Visual Investigator. Courses can be taken as self-paced e-learning or taught by an instructor over live web.
 
-At [learn.sas.com](https://learn.sas.com/) you can find **Learning Subscriptions** each of which cover a curated set of courses from beginner to expert level on subjects including:
+The best way to access courses at [learn.sas.com](https://learn.sas.com/) is through **Learning Subscriptions** each of which cover a curated set of courses from beginner to expert level on subjects including:
 
 * [SAS Administration](https://learn.sas.com/totara/program/view.php?id=73)
 * [SAS Architecture and Security](https://learn.sas.com/totara/program/view.php?id=104)
