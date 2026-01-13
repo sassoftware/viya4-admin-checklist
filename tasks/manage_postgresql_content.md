@@ -4,7 +4,7 @@
 
 <!--
 SortString: 0670
-Description: Manage content stored in PostgresQL
+Description: Manage content stored in PostgreSQL
 Tags: New,Regular,Done
 Topic: PostgreSQL
 Essential: -

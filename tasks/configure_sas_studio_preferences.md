@@ -12,7 +12,7 @@ Authors: Gerry Nelson
 -->
 When: Before user access, As needed
 
-SAS Studio can be configured to adjust default behavour. In SAS Environment Manager an administrator can change SAS Studio behaviour by updating Configuration Properties. Common reasons for updating SAS Studio Configuration Properties.
+SAS Studio can be configured to adjust default behavior. In SAS Environment Manager an administrator can change SAS Studio behavior by updating Configuration Properties. Common reasons for updating SAS Studio Configuration Properties.
 
 * Allow access to the file-system
 * Set the top-level directory which users can access in the filesystem
@@ -27,4 +27,4 @@ Resources:
 See also:
 
 * [SAS Viya making user home directories available to compute](https://communities.sas.com/t5/SAS-Communities-Library/SAS-Viya-making-user-home-directories-available-to-compute/ta-p/717561) [Blog]
-* [Saving and reloading SAS Viya configuration (covers Viya 3.x but still relevent to Viya 4)](https://blogs.sas.com/content/sgf/2018/06/08/saving-and-reloading-sas-viya-configuration/#:~:text=With%20the%20configuration%20CLI%2C%20once%20you%20have%20the,systems%20configuration.%20How%20to%20save%20and%20reload%20configuration) [Blog]
+* [Saving and reloading SAS Viya configuration](https://blogs.sas.com/content/sgf/2018/06/08/saving-and-reloading-sas-viya-configuration/#:~:text=With%20the%20configuration%20CLI%2C%20once%20you%20have%20the,systems%20configuration.%20How%20to%20save%20and%20reload%20configuration) [Blog], which covers Viya 3.x but still relevant to Viya 2020.1 and later

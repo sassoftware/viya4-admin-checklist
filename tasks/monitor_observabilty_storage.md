@@ -17,7 +17,7 @@ This task is not applicable if your observabilty tools (log and metric monitorin
 
 As often as your schedule indicates, note the amount of used and free storage in volumes used by your observability tools.
 
-For example, if you have deployed SAS Viya Monitoring for Kubernetes, you should pay attention to the free/used space in the OpenSearch persistent volumes (in the log monitoring namespace, used for log document storage and other data required for OpenSearch), and in the Prometheus
+For example, if you have deployed SAS Viya Monitoring for Kubernetes, you should pay attention to the free/used space in the OpenSearch persistent volumes (in the log monitoring namespace, used for log document storage and other data required for OpenSearch), and in the Prometheus persistent volume.
 
 Consider setting up alerts for disk utilization reaching e.g. 80% of total capacity, or when the space used is growing at a rate which might fill the disk within a short period of time, e.g. a week.
 

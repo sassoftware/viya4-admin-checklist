@@ -13,12 +13,12 @@ concepts](https://kubernetes.io/docs/home/) is essential for SAS Administrators,
 * Namespaces
 * Jobs and cronjobs
 * Volumes, volumemounts
-* Persistant volumes and persistant volume claims
+* Persistent volumes and persistent volume claims
 * Secrets and configmaps
 * [kubectl](https://kubernetes.io/docs/reference/kubectl/), the Kubernetes command-line tool
 * kube config files
 
-We would encourage all SAS Administrators to complete at least an introductory course in Kubernetes from your favourite training provider, or from one of the sources on this page: https://kubernetes.io/training/.
+We would encourage all SAS Administrators to complete at least an introductory course in Kubernetes from your favorite training provider, or from one of the sources on this page: https://kubernetes.io/training/.
 
 You should also become familiar with at least one Kubernetes user interface, such as Lens, OpenLens, K9s or [the Kubernetes Dashboard](https://kubernetes.io/docs/tasks/access-application-cluster/web-ui-dashboard/).
 
@@ -30,7 +30,7 @@ If you are the SAS administrator for an on-demand instance of SAS Viya hosted by
 
 However, if you or anyone else in your organization deploys the instance of SAS Viya which you manage, you should know that there are several [Deployment Methods](https://go.documentation.sas.com/doc/en/itopscdc/default/itopscon/p0839p972nrx25n1dq264egtgrcq.htm) that can be used to deploy SAS Viya. These have gradually evolved since SAS Viya 2020.1 was first released, and may continue to develop and change. At the time of writing the four available methods are:
 
-* Deployment using the [SAS Viya 4 Platform Deployment Operator](https://go.documentation.sas.com/doc/en/itopscdc/default/dplyml0phy0dkr/p127f6y30iimr6n17x2xe9vlt54q.htm#p0lhaw04t8hfhjn1cn1gadt5gbph)
+* Deployment using the [SAS Viya Platform Deployment Operator](https://go.documentation.sas.com/doc/en/itopscdc/default/dplyml0phy0dkr/p127f6y30iimr6n17x2xe9vlt54q.htm#p0lhaw04t8hfhjn1cn1gadt5gbph)
 * Deployment using the [sas-orchestration command running inside a Docker container](https://go.documentation.sas.com/doc/en/itopscdc/default/dplyml0phy0dkr/p127f6y30iimr6n17x2xe9vlt54q.htm#p18cfbdx5dzwoan1qsvtitxg2nir)
 * Deployment using [Kubernetes commands](https://go.documentation.sas.com/doc/en/itopscdc/default/dplyml0phy0dkr/p127f6y30iimr6n17x2xe9vlt54q.htm#p0n0x0jvog312an1wggpgnam1jsw) (i.e. kubectl apply)
 * Deployment using the [SAS Viya 4 Deployment](http://github.com/sassoftware/viya4-deployment) GitHub project
@@ -41,7 +41,7 @@ Once you have identified the deployment method used, it is useful to be aware of
 
 ## Label Kubernetes nodes to manage workload placement
 
-Read the SAS Viya Platform Operations guide's section on Deployment > Pre-Installation Tasks > [Plan the Workload Placement](https://go.documentation.sas.com/doc/en/itopscdc/default/dplyml0phy0dkr/p0om33z572ycnan1c1ecfwqntf24.htm). This explains the four main SAS Viya workload classes (stateless, stateful, cas and compute), and why you need to plan to distrubute workload across different nodes in your Kubernetes cluster so that each type of workload has the resources it requires, and so that different types of SAS Viya services/pods do not compete with each other for resources in an undesirable way. It explains how labels, and taints are used to manage where pods will run, due to their tolerations.
+Read the SAS Viya Platform Operations guide's section on Deployment > Pre-Installation Tasks > [Plan the Workload Placement](https://go.documentation.sas.com/doc/en/itopscdc/default/dplyml0phy0dkr/p0om33z572ycnan1c1ecfwqntf24.htm). This explains the four main SAS Viya workload classes (stateless, stateful, cas and compute), and why you need to plan to distribute workload across different nodes in your Kubernetes cluster so that each type of workload has the resources it requires, and so that different types of SAS Viya services/pods do not compete with each other for resources in an undesirable way. It explains how labels, and taints are used to manage where pods will run, due to their tolerations.
 
 Also note that the page linked above says:
 

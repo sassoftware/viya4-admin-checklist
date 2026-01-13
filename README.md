@@ -23,11 +23,11 @@ This project is for SAS Viya on Kubernetes. See [Previous Versions](#previous-ve
 
 ## Overview
 
-The [checklist](checklist.md) in this project contains two lists of tasks. There is a suggested frequency for the regular tasks. You, as an IT administrator or a SAS administrator, should consider performing the tasks in these lists for the SAS Viya 2020.1 and later environments that you maintain. Perform all tasks that are relevant to your environment to keep your SAS Viya deployment operating at its best over the long term.
+The [checklist](checklist.md) in this project contains two lists of tasks. There is a suggested frequency for the regular tasks. You, as an IT administrator or a SAS administrator, should consider performing the tasks in these lists for the SAS Viya Platform environments that you maintain. Perform all tasks that are relevant to your environment to keep your SAS Viya deployment operating at its best over the long term.
 
 ### Initial tasks
 
-The first list contains initial tasks, which are normally performed as one-off activities. They are performed usually shortly before, while, or soon after SAS Viya is deployed on your Kubernetes cluster. Most initial tasks should be reviewed whenever you make significant changes to your deployment (such as adding new Kubernetes nodes, adding new software components, migrating, or upgrading the version of SAS or other major components). Significant project work to deliver custom SAS application functionality based on your deployment often requires at least some of these initial tasks to be repeated or revised.
+The first list contains initial tasks, which are normally performed as one-off activities. They are usually performed shortly before, while, or soon after SAS Viya is deployed on your Kubernetes cluster. Most initial tasks should be reviewed whenever you make significant changes to your deployment (such as adding new Kubernetes nodes, adding new software components, migrating, or upgrading the version of SAS or other major components). Significant project work to deliver custom SAS application functionality based on your deployment often requires at least some of these initial tasks to be repeated or revised.
 
 ### Regular tasks
 
@@ -41,7 +41,9 @@ In the task descriptions, the words server or service always mean one or more pr
 
 [//]: # (**Optional**. If applicable to your project, list new features that users need to be aware of. This section might supplement the Changelog file from the repository and only highlight important changes.)
 
-Everything is new.
+Several tasks have been updated in version 1.2.0 of this checklist, and the following tasks are new:
+
+* ToDo
 
 [Checklists of administration tasks for previous versions of SAS](#previous-versions) were published as PDF or Word documents.
 
@@ -53,14 +55,14 @@ For **general users**, the project is best viewed on GitHub. No installation is 
 
 For **contributors**, we suggest you clone this project from GitHub and edit it using your favorite source code editor. Please also see the [Contributing](#contributing) section of this README.
 
-If you wish to contribute, you may find it helpful to be able to run Python3 in a bash terminal, so that you can run the scripts which update documents like the top-level [checklist.md](checklist.md), e.g. [scripts/build_all.py](scripts/build_all.py) (or [scripts/build_from_template.py](scripts/build_from_template.py)). By doing that, you can see if your modified tasks appear as you intend when they are listed in the [checklist.md](checklist.md) tables of tasks.
+If you wish to contribute, you may find it helpful to be able to run Python3, so that you can run the scripts which update documents like the top-level [checklist.md](checklist.md), e.g. [scripts/build_all.py](scripts/build_all.py) (or [scripts/build_from_template.py](scripts/build_from_template.py)). By doing that, you can see if your modified tasks appear as you intend when they are listed in the [checklist.md](checklist.md) tables of tasks.
 
 > Tip: The lead authors/editors maintain this project using [Microsoft Visual Studio Code](https://code.visualstudio.com/) on both:
 >
 > * Windows with [Windows Subsystem for Linux](https://docs.microsoft.com/en-us/windows/wsl/install) version 2 (WSL2) running [Ubuntu](https://ubuntu.com/), which is the default Linux distribution for WSL2.
 > * On MacOS, which supports Linux natively
 >
-> [Microsoft Visual Studio Code](https://code.visualstudio.com/) is available for both Windows and MacOS. It is convenient to run the project's Python scripts from a bash terminal within VS Code.
+> [Microsoft Visual Studio Code](https://code.visualstudio.com/) is available for both Windows and MacOS. It is convenient to run the project's Python scripts from either a bash or PowerShell terminal within VS Code.
 >
 > The easiest way to get this set up is to follow the instructions in [Getting Started with Python in VS Code](https://code.visualstudio.com/docs/python/python-tutorial). This walks you through installing:
 >
@@ -68,7 +70,7 @@ If you wish to contribute, you may find it helpful to be able to run Python3 in 
 > * VS Code Python extension
 > * Python 3
 >
-> We also like these VS Code extensions: [Git Graph](https://marketplace.visualstudio.com/items?itemName=mhutchie.git-graph), [GitHub Pull Requests and Issues](https://marketplace.visualstudio.com/items?itemName=GitHub.vscode-pull-request-github), [Markdown All in One](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one), [markdownlint](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint), [Path Intellisense](https://marketplace.visualstudio.com/items?itemName=christian-kohler.path-intellisense).
+> We like these VS Code extensions: [Git Graph](https://marketplace.visualstudio.com/items?itemName=mhutchie.git-graph), [GitHub Pull Requests and Issues](https://marketplace.visualstudio.com/items?itemName=GitHub.vscode-pull-request-github), [Markdown All in One](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one), [markdownlint](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint), [Path Intellisense](https://marketplace.visualstudio.com/items?itemName=christian-kohler.path-intellisense).
 >
 > You do not have to use these tools. You can contribute successfully to this project with command-line git and your preferred text editor. It is not necessary to run the project's Python scripts to rebuild the checklist.md document before submitting a pull request. The project owners run the scripts to update checklist.md before merging into the main branch.
 
@@ -86,7 +88,7 @@ Read about SAS Viya Administration Training and Certification in the [Additional
 
 In November 2020, SAS shipped SAS Viya Stable version 2020.1.1. SAS has released [many further versions of SAS Viya since then](https://communities.sas.com/t5/SAS-Viya-Release-Updates/tkb-p/releaseupdates). You can read about [SAS Viya platform cadences and release numbers here](https://communities.sas.com/t5/SAS-Communities-Library/Understanding-SAS-Viya-cadences-and-release-numbers/ta-p/825768).
 
-> As described in the SAS Viya Operations guide > Getting Started > [Frequently Asked Questions](https://go.documentation.sas.com/doc/en/itopscdc/default/itopscon/n0tx1x9gu37i7qn1nuv8inwzrfet.htm):
+> As described in the SAS Viya Platform Operations guide > Getting Started > [Frequently Asked Questions](https://go.documentation.sas.com/doc/en/itopscdc/default/itopscon/n0tx1x9gu37i7qn1nuv8inwzrfet.htm):
 >
 > *[**How frequently is software released?**](https://go.documentation.sas.com/doc/en/itopscdc/default/itopscon/n0tx1x9gu37i7qn1nuv8inwzrfet.htm#n1tjwv96rc8rkln1k6bepxh1qksq)*
 >
@@ -151,7 +153,7 @@ Familiarize yourself with **at least the topics** in the version of these docume
 
 The [Administration and Deployment](https://communities.sas.com/t5/SAS-Communities-Library/tkb-p/library/label-name/administration%20and%20deployment) label in the SAS Communities Library allows you to find a large selection of searchable blog posts and articles written by SAS Viya experts. High quality content is regularly posted there by members of the [SAS Global Enablement and Learning (GEL)](https://communities.sas.com/t5/tag/GEL/tg-p/board-id/library) team.
 
-We find the [SAS Viya 4 Resource Guide]( https://github.com/sassoftware/viya4-resource-guide) very useful. It describes a set of linked open-source projects (like this one) that support the pre-installation, deployment, and subsequent monitoring and management of SAS Viya platform software.
+We find the [SAS Viya 4 Resource Guide](https://github.com/sassoftware/viya4-resource-guide) very useful. It describes a set of linked open-source projects (like this one) that support the pre-installation, deployment, and subsequent monitoring and management of SAS Viya platform software.
 
 Discover the SAS Viya courses available at [learn.sas.com](https://learn.sas.com/). The course catalog there lists training material on getting started, administration, data management, programming and analytics, SAS Visual Analytics on SAS Viya, and specific SAS Viya solutions such as SAS Visual Investigator. Courses can be taken as self-paced e-learning or taught by an instructor over live web.
 
