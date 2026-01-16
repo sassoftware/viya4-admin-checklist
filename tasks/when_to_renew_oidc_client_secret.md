@@ -19,7 +19,7 @@ To configure SAS Viya to use OIDC, follow the instructions in the SAS Viya Admin
 
 During the process described in the instructions, you (or an IT administrator) register SAS Viya as a client of OIDC which creates a clientID, and you then generate a ClientSecret which the client (SAS Viya's SAS Logon Manager service) will use to authenticate when making authentication requests.
 
-That ClientSecret has a maximum lifetime of 2 years, but your organzation or IT administrators may choose to limit OIDC ClientSecrets to a shorter lifetime - perhaps only 3 or 6 months.
+That ClientSecret has a maximum lifetime of 2 years, but your organization or IT administrators may choose to limit OIDC ClientSecrets to a shorter lifetime - perhaps only 3 or 6 months.
 
 The expiry date for an OIDC ClientSecret can be seen in the Azure Portal in the Azure Active Directory page for your Reporting Environment, under Certificates & Secrets. On the Client Secrets tab, see the 'Expires' column.
 
@@ -29,7 +29,7 @@ The relyingPartySecret must contain the current value of the ClientSecret genera
 
 If the ClientSecret expires without being renewed, SAS Viya would no longer be able to authenticate end user sign-ins via OIDC.
 
-To ensure that this does not happen, find out when your OIDC ClientSecret for SAS VIya expores, and make sure you act before it expires to have a new ClientSecret generated (with a new expiry date), and update the relyingPartySecret in SAS Viya's Environment Manager Configuration page with the new ClientSecret. Note the date the new secret expires.
+To ensure that this does not happen, find out when your OIDC ClientSecret for SAS Viya expires, and make sure you act before it expires to have a new ClientSecret generated (with a new expiry date), and update the relyingPartySecret in SAS Viya's Environment Manager Configuration page with the new ClientSecret. Note the date the new secret expires.
 
 See also: [Renew your OIDC client secret before it expires](./renew_oidc_client_secret.md)
 

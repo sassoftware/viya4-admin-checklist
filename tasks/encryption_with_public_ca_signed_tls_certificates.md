@@ -23,8 +23,8 @@ The CA certificate can be extracted from the `sas-viya-ca-certificate-secret` se
 
 See also:
 * [SAS Viya Platform Encryption: Data in Motion](https://go.documentation.sas.com/doc/en/sasadmincdc/default/calencryptmotion/titlepage.htm) [Doc]
-* [SAS Viya 4 TLS Options](https://communities.sas.com/t5/SAS-Communities-Library/SAS-Viya-2020-1-and-later-TLS-Options/ta-p/705982) [Blog]
-* [SAS Viya 4 TLS Troubleshooting Tips](https://communities.sas.com/t5/SAS-Communities-Library/SAS-Viya-2020-1-and-later-TLS-Troubleshooting-Tips/ta-p/706087) [Blog]
+* [SAS Viya 2020.1 (and later) TLS Options](https://communities.sas.com/t5/SAS-Communities-Library/SAS-Viya-2020-1-and-later-TLS-Options/ta-p/705982) [Blog]
+* [SAS Viya 2020.1 (and later) TLS Troubleshooting Tips](https://communities.sas.com/t5/SAS-Communities-Library/SAS-Viya-2020-1-and-later-TLS-Troubleshooting-Tips/ta-p/706087) [Blog]
 * [SAS Viya 2021.1.3 TLS Changes](https://communities.sas.com/t5/SAS-Communities-Library/SAS-Viya-2021-1-3-TLS-Changes/ta-p/754712) [Blog]
 
 [Back to checklist](../checklist.md)

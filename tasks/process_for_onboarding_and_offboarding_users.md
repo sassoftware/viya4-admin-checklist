@@ -21,7 +21,7 @@ Document any steps that must be performed when new users are onboarded and given
 Users in SAS Viya are added and removed only through one of:
 
 * your SCIM provider, or
-* your LDAP provider (for example, Active Directory, OpenLDAP, or something similar)
+* your LDAP provider (for example EntraID, Active Directory, OpenLDAP, or something similar)
 
 Consider whether and how you will know when users are added, moved, or removed? Consider group memberships for new or departing users, especially custom group memberships. Does your onboarding or off boarding process need steps to maintain the application of your authorization model for new users? Do you need to create home directories for new users and archive (or delete) home directories for departing users? Do new users require training or orientation? Should they be required to agree to any terms or conditions of use or working practices before gaining access?
 

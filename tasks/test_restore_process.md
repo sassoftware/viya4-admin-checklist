@@ -25,7 +25,7 @@ Backups are only useful if they can be restored. You should test backups and reh
 * Performing an Inventory scan after the restore
 * Validating the success of the restore
 
-> NOTE: In SAS Viya 4 you can only restore to the same Release and Cadence that a backup package was created in.
+> NOTE: In SAS Viya you can only restore to the same Release and Cadence that a backup package was created in.
 
 Resources:
 

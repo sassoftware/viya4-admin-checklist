@@ -12,7 +12,7 @@ Authors: David Stern,Michael Erickson,Gerry Nelson
 -->
 When: After platform changes
 
-Define a strategy for creating, preserving and restoring Viya Backups. Backups are critical in Enterprise Software. In SAS Viya a good backup is key to protecting your environment and supporting the restoration of lost content or a complete environment. SAS Viya 4 supports backup and restore using native Kubernetes technologies. The primary resource for implementing your backup stragegy is the SAS Viya Platform Backup documentation [here](https://go.documentation.sas.com/doc/en/sasadmincdc/default/calbr/titlepage.htm). Your backup strategy should include the steps to:
+Define a strategy for creating, preserving and restoring Viya Backups. Backups are critical in Enterprise Software. In SAS Viya a good backup is key to protecting your environment and supporting the restoration of lost content or a complete environment. SAS Viya supports backup and restore using native Kubernetes technologies. The primary resource for implementing your backup strategy is the SAS Viya Platform Backup documentation [here](https://go.documentation.sas.com/doc/en/sasadmincdc/default/calbr/titlepage.htm). Your backup strategy should include the steps to:
 
 * Configure the frequency of scheduled backups
 * Check the status of scheduled backups

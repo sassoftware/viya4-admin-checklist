@@ -20,10 +20,10 @@ In SAS Viya, the OIDC ClientID and ClientSecret can be seen in Environment Manag
 
 Before your OIDC client secret expires, work with your IT administrator to have them generate a new client secret, and replace the **relyingPartySecret** with that client secret.
 
-General instructions for setting up Azure AD for OIDC can be found in the SAS Viya Administration guide > Security > Authentication > Authentication > Concepts > [Configure Azure AD for OIDC](https://go.documentation.sas.com/doc/en/sasadmincdc/default/calauthmdl/p1i1pi9jk2nkkqn1rkh3t5elvc9y.htm#n1hp4d6pixslt8n1cm03kw8le8wm).
+General instructions for setting up Azure AD for OIDC can be found in the SAS Viya Administration guide > Security > Authentication > Authentication > Concepts > [Configure Azure AD for OIDC](https://go.documentation.sas.com/doc/en/sasadmincdc/default/calauthmdl/p1i1pi9jk2nkkqn1rkh3t5elvc9y.htm#n1hp4d6pixslt8n1cm03kw8le8wm) [Doc].
 
 Note the date the new secret expires, so that you can renew it again before it expires.
 
-See also: [Know when to renew your OIDC client secret](./when_to_renew_oidc_client_secret.md)
+See also: [Know when to renew your OIDC client secret](./when_to_renew_oidc_client_secret.md) [Task]
 
 [Back to checklist](../checklist.md)

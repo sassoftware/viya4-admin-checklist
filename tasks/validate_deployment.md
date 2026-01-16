@@ -19,7 +19,7 @@ See also [Validating the Deployment](https://go.documentation.sas.com/doc/en/ito
 
 Based on that documentation, and on the suggestions below, design your own validation procedure, and follow it. You may be able to script or otherwise automate some of this validation - see also [Automate your SAS Viya Deployment Process](./automate_environment_creation.md) [Task].
 
-The steps in your validation procedure should ideally be just enough to check the most important components are working, without taking a lot of time or effort. You may choose to add validation tests for components that you have previously found to be problematic in your specific SAS Viya depoloyment. They could include, and are not limited to, the following examples:
+The steps in your validation procedure should ideally be just enough to check the most important components are working, without taking a lot of time or effort. You may choose to add validation tests for components that you have previously found to be problematic in your specific SAS Viya deployment. They could include, and are not limited to, the following examples:
 
 ## Kubernetes validation
 
@@ -52,8 +52,7 @@ In addition to the suggested validation steps listed above, you should add tests
 
 ## Automated Validation with the pyviyatools
 
-ValidateViya is a pyviyatool that runs a series of tests on a Viya environment, validating that it is running as expected. validateviya has a modular design, allowing for the creation of custom tests, the alteration of existing tests, and the removal of unneeded tests. Checkout the [vaildateviya User Guide](https://github.com/sassoftware/pyviyatools/blob/master/validateviya-manual.md) in the [pyviyatools](https://github.com/sassoftware/pyviyatools).
-
+Validateviya is a pyviyatool that runs a series of tests on a Viya environment, validating that it is running as expected. Validateviya has a modular design, allowing for the creation of custom tests, the alteration of existing tests, and the removal of unneeded tests. Checkout the [validateviya User Guide](https://github.com/sassoftware/pyviyatools/blob/master/validateviya-manual.md) in the [pyviyatools](https://github.com/sassoftware/pyviyatools).
 
 See also:
 
