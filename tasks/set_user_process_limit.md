@@ -12,7 +12,15 @@ Authors: David Stern
 -->
 When: After platform changes
 
-By default, SAS Viya is configured to allow each user to run 10 launched SAS
+## When SAS Workload Management is enabled
+
+[SAS Workload Management](https://go.documentation.sas.com/doc/cn/sasadmincdc/default/wrkldmgmt/p09rquinumlfumn1gwfza7sfdt30.htm) [Doc] is [enabled by default](https://go.documentation.sas.com/doc/cn/sasadmincdc/default/itopswn/n0mtekugpl1fc4n18okuk7fn1ei4.htm#n0twzc4rbq2arjn1r5kxlwe8ux7d) [Doc] in most SAS Viya Platform deployments. In SAS Workload Management, each **queue** has a [parameter](https://go.documentation.sas.com/doc/cn/sasadmincdc/default/wrkldmgmt/n1xug8bvp3fnv0n1nrxtofezcxv1.htm#p0w3agj0iqexcmn1dhn1htnkihui) called **Maximum jobs per user**, whose value is *undefined* by default, but which can be set to a positive integer to limit the maximum number of jobs from each user that can be running from the queue at one time.
+
+Every launched compute server pod (including those started for e.g. SAS Studio and SAS Model Studio interactive sessions), scheduled compute job, batch pod and connect pod counts as a job in SAS Workload Management.
+
+## In SAS Launcher, whether or not SAS Workload Management is enabled
+
+Irrespective of whether SAS Workload Management is enabled or not, SAS Launcher is configured to allow each user to run 10 launched SAS
 Programming Run-Time (i.e. the sum of SAS Compute, SAS Connect and SAS Batch)
 sessions/pods at the same time - 10 total across all launched pods. This is
 intended to prevent users from starting an excessive number of SAS compute
