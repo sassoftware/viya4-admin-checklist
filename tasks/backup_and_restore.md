@@ -38,7 +38,7 @@ Resources:
 https://communities.sas.com/t5/SAS-Communities-Library/A-generic-method-for-copying-backup-packages-for-migration-or/ta-p/765158) [Blog]
 * [Retaining your SAS Viya Backup](
 https://communities.sas.com/t5/SAS-Communities-Library/Retaining-your-SAS-Viya-Backup/ta-p/845138) [Blog]
-[Selective backup and restore of SAS Viya Content](https://communities.sas.com/t5/SAS-Communities-Library/Selective-backup-and-restore-of-SAS-Viya-Content/ta-p/968018) [Blog]
+* [Selective backup and restore of SAS Viya Content](https://communities.sas.com/t5/SAS-Communities-Library/Selective-backup-and-restore-of-SAS-Viya-Content/ta-p/968018) [Blog]
 
 See Also:
 
