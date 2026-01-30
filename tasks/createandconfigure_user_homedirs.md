@@ -25,7 +25,11 @@ If home directories already exist on shared storage follow the process in the bl
 * Update the identites configuration to set the identifier.homeDirectoryPrefix prefix property with the path to the location where the home directories reside
 * Configure SAS Studio to be able to see the home-directories
 
-If home-directory (CASUSER path location) access is desired in CAS, host launch must be enabled and the user must be a member of the CASHostAccountRequired Custom Group.
+If home-directory (CASUSER path location) access is desired in CAS:
+
+* host launch must be enabled
+* the CAS environment variable CASALLHOSTACCOUNTS if all users wish to access home-directories OR selected users can be added to as members of the CASHostAccountRequired Custom Group.
+* the path to the home-directories must be mounted to the CAS server
 
 Resources:
 
