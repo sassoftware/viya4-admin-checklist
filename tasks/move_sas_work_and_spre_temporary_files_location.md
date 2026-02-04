@@ -12,7 +12,7 @@ Authors: David Stern
 -->
 When: After platform changes
 
-## Read these excellent of SAS Communities posts about SAS Work and storage for the Programming Run-time
+## Read these excellent SAS Communities posts about SAS Work and storage for the Programming Run-time
 
 Hans Joachim-Edert has published two posts about SAS Work storage in the SAS Communities Library. They use examples in an Azure AKS deployment, but the ideas he explains apply to all SAS Viya deployments, and the posts are a fantastic explanation of the considerations.
 
