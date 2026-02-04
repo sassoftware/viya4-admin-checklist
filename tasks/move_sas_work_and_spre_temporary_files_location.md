@@ -12,7 +12,7 @@ Authors: David Stern
 -->
 When: After platform changes
 
-## Read this excellent pair of SAS Communities posts about SAS Work
+## Read these excellent SAS Communities posts about SAS Work and storage for the Programming Run-time
 
 Hans Joachim-Edert has published two posts about SAS Work storage in the SAS Communities Library. They use examples in an Azure AKS deployment, but the ideas he explains apply to all SAS Viya deployments, and the posts are a fantastic explanation of the considerations.
 
@@ -21,19 +21,24 @@ Hans Joachim-Edert has published two posts about SAS Work storage in the SAS Com
 
 ## SAS Programming Run-Time processes create temporary files
 
-During normal use, SAS Programming Run-Time processes creates temporary files in a volume named 'viya', mounted in each launched SAS Programming Run-time server pod. These temporary files are only intended to exist while the programming session is running, and intended to be deleted before the process (and the pod) terminates. These temporary files include:
+During normal use, SAS Programming Run-Time processes creates temporary files in a volume named '/viya', mounted in each launched SAS Programming Run-time server pod. Programs running CAS actions in the compute server (see below) may also create temporary CAS cache files in a volume named '/tmp'. These temporary files are only intended to exist while the programming session is running, and are meant to be deleted before the process (and the pod) terminates. Examples include:
 
-* A directory for the SAS WORK library, and temporary dataset files inside it.
+* Temporary datasets and other files written to the SAS WORK library, normally under /viya/work.
     > The WORK library is a core component of the SAS Programming Run-Time, for two reasons:
     > * The speed with which SAS work datasets and other files are written and read from the WORK library is a critical factor in the performance of most SAS programs.
     > * SAS work datasets can be large, and may require more storage space than the default temporary file volume has available to it.
 * Files in directories named log, spool, run and tmp, depending to some extent on what SAS programming statements and procedures are run. These are less visible to SAS programmers, but they exist and should be considered alongside the files required for the SAS WORK library.
+* CAS cache files for CAS tables loaded into memory in the compute server, by default stored in a scratch volume mounted at `/tmp` in the compute pod.
+
+The capability to run CAS actions on CAS data (or base SAS data) inside the compute server is relatively new to SAS Viya, introduced in [Enhancements to the SAS Compute Server](https://go.documentation.sas.com/doc/en/pgmsascdc/default/lepg/n09pm6c6ycpbbln10gbwmz876cqh.htm#p0co5z5gcxdfwxn1kb7o3apv8dfl) [Doc] in SAS Viya Stable 2025.02 and later (released in March 2025) or SAS Viya LTS 2025.03 (released in May 2025). These enhancements support advanced analytics procedures, including those that previously required a CAS server, allowing them to run directly within the SAS Compute Server. See also:
+    * [Enhancements to the SAS Programming Run-Time Servers with SAS Viya Stable 2025.02](https://communities.sas.com/t5/SAS-Communities-Library/Enhancements-to-the-SAS-Programming-Run-Time-Servers-with-SAS/ta-p/960738) [Blog]
+    * [Introducing SAS Compute Server Enhancements](https://communities.sas.com/t5/SAS-Communities-Library/Introducing-SAS-Compute-Server-Enhancements/ta-p/962421) [Blog]
 
 ## Temporary Files are normally cleaned up automatically
 
-When a Programming Run-Time session ends normally, the temporary files in these directories are (supposed to be) deleted, though some of the directories can remain. These directories are very small on disk, and not excessive in number. However, if a Programming Run-Time session crashes - usually a rare event - these files can be left behind and must eventually be cleaned up by a SAS Administrator to recover disk space and reduce the chance that sensitive data remains on a disk.
+When a Programming Run-Time session ends normally, the temporary files in these directories are (supposed to be) deleted, though some of the directories can remain. These directories are very small on disk, and not excessive in number. However, if a Programming Run-Time session crashes - usually a rare event - these files can be left behind and, if the storage class used for the volume does not do it automatically, they must eventually be cleaned up by a SAS Administrator to recover disk space and reduce the chance that sensitive data remains on a disk.
 
-> NOTE: In some configurations, the temporary files are not always cleaned up, and removing them **becomes the SAS Administrator's responsability**.
+> NOTE: In some configurations with certain storage classes, the temporary files are not always cleaned up, and removing them **becomes the SAS Administrator's responsability**.
 
 At the time of writing, there is no official SAS equivalent to the [SAS 9 and SAS Viya 3 cleanwork utility](https://go.documentation.sas.com/doc/en/pgmsascdc/9.4_3.5/hostunx/n13ozwpq7az8v6n1s77r8c2zp9d1.htm) [Doc]. You may need to make your own or use an unofficial tool someone else has created.
 

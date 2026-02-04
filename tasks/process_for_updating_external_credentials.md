@@ -8,12 +8,12 @@ Description: Define a when and how you will update credentials that are stored i
 Tags: Initial,Legacy,Done
 Topic: Kubernetes & IT Admin
 Essential: -
-Authors: David Stern
+Authors: David Stern,Stuart Rogers
 -->
 When: After platform changes
 
 If you store any credentials to external databases or other systems in
-Authentication, Connection or Encryption Domains, establish a
+Authentication (OAuth2.0, Password and Token), Connection or Encryption Domains, establish a
 procedure to ensure the credentials are changed whenever the passwords are
 changed in the external database or other system.
 
