@@ -16,6 +16,18 @@ Auditing in SAS Viya is enabled by default at deployment time. SAS Viya’s Audi
 
 Every seven days ([configurable](https://go.documentation.sas.com/doc/en/sasadmincdc/default/calaudit/p0txfp3picp59on1ua27dsqcpjwv.htm?fromDefault=#n03ex24fl4dr07n1hy3qqmgrvl2v) [Doc]), the Audit service transfers records from the audit database into the audit archive; a location which must be accessible to the *sas-audit* pod. If no location is specified, those records are deleted. After transfers, the exported records are also removed from the audit database.
 
+## Regulatory considerations
+Assess if your environment requires tamper-proof, immutable storage for archived audit records to meet regulations like EU DORA, US SOX, HIPAA, AUSTRAC/APRA, or FedRAMP.
+
+Examples include Azure Blob immutable storage (with Object Lock), AWS S3 Object Lock, or other WORM-compliant systems. SAS Viya audit records (in tables like `security_audit` and `authentications`) capture user activity events and are inherently immutable internally, but external archival must preserve this.
+
+Many regulation also have minimum retention periods. Ensure your configuration is updated to comply if necessary. 
+
+If regulatory gaps exist (e.g. insufficient detail), supplement with additional logging or forwarding mechanisms.
+​
+
+## Configuration
+
 If you wish to keep archived audit records, a persistent volume must be attached to the *sas-audit* pod and used as the archive location. The `sas.audit.archive.process` and `sas.audit.archive.system` configuration instances control the behaviour of the archive process, such as the archive destination, the conditions that must be met before the archive runs and the option to enable and disable archiving altogether.
 
 See also:
