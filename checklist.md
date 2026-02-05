@@ -23,7 +23,7 @@ regular scheduled basis.
 
 
 
-> *45 tasks tagged as Initial;Done*
+> *48 tasks tagged as Initial;Done*
 
 | # ▴ | Title | Description | Topic | Essential |
 |---|---|---|---|---|
@@ -36,7 +36,9 @@ regular scheduled basis.
 | 0070 | [Create and Configure User home-directories](tasks/createandconfigure_user_homedirs.md) | Create and configure user-home directories | Kubernetes & IT Admin | - |
 | 0080 | [Ensure You Have Provided Sufficient Storage for Path-Based Caslibs](tasks/ensure_storage_for_caslibs.md) | Ensure you have provided sufficient filesystem storage of an appropriate type for path-based caslibs. | Kubernetes & IT Admin | - |
 | 0090 | [Define a Process for Updating External Credentials](tasks/process_for_updating_external_credentials.md) | Define a when and how you will update credentials that are stored in SAS Viya for external systems such as databases, when they change | Kubernetes & IT Admin | - |
+| 0095 | [Know how SAS Viya Authenticates to your OIDC Identity Provider](tasks/how_viya_authenticates_to_oidc_provider.md) | Know how SAS Viya Authenticates to your OIDC Identity Provider | Kubernetes & IT Admin | - |
 | 0100 | [Know when to renew your OIDC client secret](tasks/when_to_renew_oidc_client_secret.md) | Open ID Connect uses expiring client secrets with a maximum lifetime of 2 years. If your SAS Viya deployment is configured to use OIDC, ensure that you know when this client secret expires so that you can renew it before it does. | Kubernetes & IT Admin | - |
+| 0105 | [Know when to renew OIDC Private Key JWT](tasks/when_to_renew_oidc_private_key_jwt.md) | If your SAS Viya deployment is configured to use OIDC, ensure that you know when renew the private key JSON web tokens. | Kubernetes & IT Admin | - |
 | 0110 | [Configure Open Source Integration](tasks/configure_open_source_integration.md) | Configure open source integration | Kubernetes & IT Admin | - |
 | 0120 | [Review Tuning Recommendations](tasks/tuning_recommendations.md) | Review SAS Viya platform tuning recommendations and apply as needed | Kubernetes & IT Admin | - |
 | 0130 | [Configure CORS and CSRF settings](tasks/configure_cors_and_csrf.md) | Configure the SAS Viya platform's Cross-Origin Resource Sharing (CORS) and Cross-Site Request Forgery (CSRF) settings for deployments behind a DNS alias or proxy, and for SAS Visual Analytics | Kubernetes & IT Admin | - |
@@ -55,6 +57,7 @@ regular scheduled basis.
 | 0260 | [Know how to Contact SAS Technical Support for Help](tasks/contact_SAS_technical_support.md) | Ensure all SAS platform administration staff know how to contact SAS Technical Support for help | SAS Administration | - |
 | 0270 | [Identify Components of SAS and Third-Party Software](tasks/identify_viya_components.md) | Ensure you can identify the components of SAS and third-party software that make up SAS Viya | SAS Administration | - |
 | 0280 | [Decide approach to applying updates](tasks/decide_update_approach.md) | Decide how and when your SAS Viya software will be updated | SAS Administration | - |
+| 0285 | [Configure SAS Workload Management](tasks/configure_sas_workload_management.md) | Configure SAS Workload Management | SAS Administration | - |
 | 0290 | [Configure SAS Studio Preferences](tasks/configure_sas_studio_preferences.md) | Configure SAS Studio Preferences | SAS Administration | - |
 | 0300 | [Define a Process for Onboarding and Offboarding Users](tasks/process_for_onboarding_and_offboarding_users.md) | Document any steps that must be performed when new users are onboarded and offboarded | SAS Administration | Yes |
 | 0310 | [Secure the sasboot password](tasks/secure_sasboot_password.md) | Disable the sasboot password reset feature after you have finished setting up identities and initial administrators | SAS Administration | - |
@@ -77,13 +80,14 @@ regular scheduled basis.
 
 This table lists smaller tasks that should be repeated on a regular basis. See the [Regular Task Schedule](#regular-task-schedule) which follows this table for an example of when you might run each of these tasks.
 
-> *23 tasks tagged as Regular;Done*
+> *24 tasks tagged as Regular;Done*
 
 | # ▴ | Title | Description | Frequency | Topic | Essential |
 |---|---|---|---|---|---|
 | 0460 | [Renew your SAS Viya License](tasks/update_licenses.md) | Obtain and apply a new SAS Viya platform license before your existing license expires | Annually | Kubernetes & IT Admin | - |
 | 0470 | [Update the SAS Viya CLI](tasks/update_sas_viya_cli.md) | Ensure you have installed the sas-viya cli and its plugins | Quarterly | Kubernetes & IT Admin | - |
-| 0480 | [Renew your OIDC client secret](tasks/renew_oidc_client_secret.md) | If your SAS Viya deployment is configured to use OIDC, renew your OIDC client secret before it expires. | When secret changes | Kubernetes & IT Admin | - |
+| 0480 | [Renew your OIDC client secret before it expires](tasks/renew_oidc_client_secret.md) | If your SAS Viya deployment is configured to use OIDC, renew your OIDC client secret before it expires. | When secret changes | Kubernetes & IT Admin | - |
+| 0485 | [Renew your OIDC JWT Signing Keys](tasks/renew_oidc_jwt_signing_keys.md) | If your SAS Viya deployment is configured to use OIDC, renew your OIDC signing keys before they expire. | When JWT signing key changes | Kubernetes & IT Admin | - |
 | 0490 | [Update External Credentials](tasks/update_external_credentials.md) | When external credentials change, follow your defined process to update them in SAS Viya | When credentials change | Kubernetes & IT Admin | - |
 | 0500 | [Check the Status of SAS services](tasks/check_service_status.md) | Regularly check the status of SAS services | Daily | Observability | - |
 | 0510 | [Monitor Memory, CPU, Network, and Disk Throughput Usage](tasks/monitor_usage.md) | Monitor memory usage, CPU usage, network I/O usage, disk throughput usage, input/output operations per second (IOPS), etc | Daily | Observability | - |
@@ -109,13 +113,14 @@ This table lists smaller tasks that should be repeated on a regular basis. See t
 
 This table shows the same regular tasks as the [Regular Task Checklist](#regular-task-checklist) table above, but is focussed more on how often we suggest each regular task might be run.
 
-> *23 tasks tagged as Regular;Done*
+> *24 tasks tagged as Regular;Done*
 
 | # ▴ | Title | Annually | Quarterly | Monthly | Weekly | Daily | Other |
 |---|---|:-:|:-:|:-:|:-:|:-:|---|
 | 0460 | [Renew your SAS Viya License](tasks/update_licenses.md) | ◎ |  |  |  |  |  |
 | 0470 | [Update the SAS Viya CLI](tasks/update_sas_viya_cli.md) |  | ◎ |  |  |  |  |
-| 0480 | [Renew your OIDC client secret](tasks/renew_oidc_client_secret.md) |  |  |  |  |  | When secret changes |
+| 0480 | [Renew your OIDC client secret before it expires](tasks/renew_oidc_client_secret.md) |  |  |  |  |  | When secret changes |
+| 0485 | [Renew your OIDC JWT Signing Keys](tasks/renew_oidc_jwt_signing_keys.md) |  |  |  |  |  | When JWT signing key changes |
 | 0490 | [Update External Credentials](tasks/update_external_credentials.md) |  |  |  |  |  | When credentials change |
 | 0500 | [Check the Status of SAS services](tasks/check_service_status.md) |  |  |  |  | ◎ |  |
 | 0510 | [Monitor Memory, CPU, Network, and Disk Throughput Usage](tasks/monitor_usage.md) |  |  |  |  | ◎ |  |
@@ -137,4 +142,4 @@ This table shows the same regular tasks as the [Regular Task Checklist](#regular
 | 0670 | [Manage content stored in PostgreSQL](tasks/manage_postgresql_content.md) |  |  | ◎ |  |  |  |
 | 0680 | [Maintain SAS Infrastructure Data Server](tasks/maintain_postgresql_server.md) |  |  | ◎ |  |  |  |
 
-</br>Generated by build_from_template.py on: 16 Jan 2026 14:57:22.</br>
+</br>Generated by build_from_template.py on: 05 Feb 2026 14:05:58.</br>

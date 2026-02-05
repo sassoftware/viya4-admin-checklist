@@ -45,6 +45,7 @@ Several tasks have been updated in version 1.2.0 of this checklist, and the foll
 
 * 0095 [Know how SAS Viya Authenticates to your OIDC Identity Provider](tasks/how_viya_authenticates_to_oidc_provider.md)
 * 0105 [Know when to renew OIDC Private Key JWT](tasks/when_to_renew_oidc_private_key_jwt.md)
+* 0285 [Configure SAS Workload Management](tasks/configure_sas_workload_management.md)
 * 0485 [Renew your OIDC JWT Signing Keys](tasks/renew_oidc_jwt_signing_keys.md)
 
 [Checklists of administration tasks for previous versions of SAS](#previous-versions) were published as PDF or Word documents.
