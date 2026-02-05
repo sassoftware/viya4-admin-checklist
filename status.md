@@ -48,7 +48,7 @@ These tasks are done, finished, complete and ready for public consumption.
 
 > **Important**: Only tasks tagged with `Done` are shown in the main [checklist](./checklist.md) or in the lists of [tasks grouped by topic](./tasks_by_topic.md). Tasks tagged as `Backlog`, `InProgress` and `Review` are not included in the checklists on those pages.
 
-> *68 tasks tagged as Done*
+> *72 tasks tagged as Done*
 
 | # ▴ | Title | Description |
 |---|---|---|
@@ -61,7 +61,9 @@ These tasks are done, finished, complete and ready for public consumption.
 | 0070 | [Create and Configure User home-directories](tasks/createandconfigure_user_homedirs.md) | Create and configure user-home directories |
 | 0080 | [Ensure You Have Provided Sufficient Storage for Path-Based Caslibs](tasks/ensure_storage_for_caslibs.md) | Ensure you have provided sufficient filesystem storage of an appropriate type for path-based caslibs. |
 | 0090 | [Define a Process for Updating External Credentials](tasks/process_for_updating_external_credentials.md) | Define a when and how you will update credentials that are stored in SAS Viya for external systems such as databases, when they change |
+| 0095 | [Know how SAS Viya Authenticates to your OIDC Identity Provider](tasks/how_viya_authenticates_to_oidc_provider.md) | Know how SAS Viya Authenticates to your OIDC Identity Provider |
 | 0100 | [Know when to renew your OIDC client secret](tasks/when_to_renew_oidc_client_secret.md) | Open ID Connect uses expiring client secrets with a maximum lifetime of 2 years. If your SAS Viya deployment is configured to use OIDC, ensure that you know when this client secret expires so that you can renew it before it does. |
+| 0105 | [Know when to renew OIDC Private Key JWT](tasks/when_to_renew_oidc_private_key_jwt.md) | If your SAS Viya deployment is configured to use OIDC, ensure that you know when renew the private key JSON web tokens. |
 | 0110 | [Configure Open Source Integration](tasks/configure_open_source_integration.md) | Configure open source integration |
 | 0120 | [Review Tuning Recommendations](tasks/tuning_recommendations.md) | Review SAS Viya platform tuning recommendations and apply as needed |
 | 0130 | [Configure CORS and CSRF settings](tasks/configure_cors_and_csrf.md) | Configure the SAS Viya platform's Cross-Origin Resource Sharing (CORS) and Cross-Site Request Forgery (CSRF) settings for deployments behind a DNS alias or proxy, and for SAS Visual Analytics |
@@ -80,6 +82,7 @@ These tasks are done, finished, complete and ready for public consumption.
 | 0260 | [Know how to Contact SAS Technical Support for Help](tasks/contact_SAS_technical_support.md) | Ensure all SAS platform administration staff know how to contact SAS Technical Support for help |
 | 0270 | [Identify Components of SAS and Third-Party Software](tasks/identify_viya_components.md) | Ensure you can identify the components of SAS and third-party software that make up SAS Viya |
 | 0280 | [Decide approach to applying updates](tasks/decide_update_approach.md) | Decide how and when your SAS Viya software will be updated |
+| 0285 | [Configure SAS Workload Management](tasks/configure_sas_workload_management.md) | Configure SAS Workload Management |
 | 0290 | [Configure SAS Studio Preferences](tasks/configure_sas_studio_preferences.md) | Configure SAS Studio Preferences |
 | 0300 | [Define a Process for Onboarding and Offboarding Users](tasks/process_for_onboarding_and_offboarding_users.md) | Document any steps that must be performed when new users are onboarded and offboarded |
 | 0310 | [Secure the sasboot password](tasks/secure_sasboot_password.md) | Disable the sasboot password reset feature after you have finished setting up identities and initial administrators |
@@ -99,7 +102,8 @@ These tasks are done, finished, complete and ready for public consumption.
 | 0450 | [Design and Maintain a Schedule of SAS Administration Housekeeping Activities](tasks/maintain_housekeeping_schedule.md) | Design and maintain a schedule of SAS Viya platform administration housekeeping activities, specifying when regular tasks should be performed. |
 | 0460 | [Renew your SAS Viya License](tasks/update_licenses.md) | Obtain and apply a new SAS Viya platform license before your existing license expires |
 | 0470 | [Update the SAS Viya CLI](tasks/update_sas_viya_cli.md) | Ensure you have installed the sas-viya cli and its plugins |
-| 0480 | [Renew your OIDC client secret](tasks/renew_oidc_client_secret.md) | If your SAS Viya deployment is configured to use OIDC, renew your OIDC client secret before it expires. |
+| 0480 | [Renew your OIDC client secret before it expires](tasks/renew_oidc_client_secret.md) | If your SAS Viya deployment is configured to use OIDC, renew your OIDC client secret before it expires. |
+| 0485 | [Renew your OIDC JWT Signing Keys](tasks/renew_oidc_jwt_signing_keys.md) | If your SAS Viya deployment is configured to use OIDC, renew your OIDC signing keys before they expire. |
 | 0490 | [Update External Credentials](tasks/update_external_credentials.md) | When external credentials change, follow your defined process to update them in SAS Viya |
 | 0500 | [Check the Status of SAS services](tasks/check_service_status.md) | Regularly check the status of SAS services |
 | 0510 | [Monitor Memory, CPU, Network, and Disk Throughput Usage](tasks/monitor_usage.md) | Monitor memory usage, CPU usage, network I/O usage, disk throughput usage, input/output operations per second (IOPS), etc |
@@ -118,7 +122,7 @@ These tasks are done, finished, complete and ready for public consumption.
 | 0640 | [Test the Process to Restore From Backups](tasks/test_restore_process.md) | Periodically test the process to restore from backups |
 | 0650 | [Configure CAS server startup to load data](tasks/cas_server_startup.md) | Configure CAS server startup to load data |
 | 0660 | [Monitor Compute Sessions](tasks/monitor_compute_sessions.md) | Use the sas-viya CLI, log and metric monitoring tools to monitor compute sessions |
-| 0670 | [Manage content stored in PostgreSQL](tasks/manage_postgresql_content.md) | Manage content stored in PostgresQL |
+| 0670 | [Manage content stored in PostgreSQL](tasks/manage_postgresql_content.md) | Manage content stored in PostgreSQL |
 | 0680 | [Maintain SAS Infrastructure Data Server](tasks/maintain_postgresql_server.md) | Perform routine maintenance on the SAS Infrastructure Data Server |
 
 ---
@@ -127,7 +131,7 @@ These tasks are done, finished, complete and ready for public consumption.
 
 These tasks are new in this Checklist for SAS Viya 2020.1 and later. They have no equivalent in either of our earlier checklists.
 
-> *40 tasks tagged as New*
+> *44 tasks tagged as New*
 
 | # ▴ | Title | Description | Tags |
 |---|---|---|---|
@@ -137,6 +141,8 @@ These tasks are new in this Checklist for SAS Viya 2020.1 and later. They have n
 | 0060 | [Load POSIX attributes](tasks/load_posix_attributes.md) | Load POSIX attributes for identities when attributes are not returned from the authentication provider | New,Initial,Done |
 | 0070 | [Create and Configure User home-directories](tasks/createandconfigure_user_homedirs.md) | Create and configure user-home directories | New,Initial,Done |
 | 0100 | [Know when to renew your OIDC client secret](tasks/when_to_renew_oidc_client_secret.md) | Open ID Connect uses expiring client secrets with a maximum lifetime of 2 years. If your SAS Viya deployment is configured to use OIDC, ensure that you know when this client secret expires so that you can renew it before it does. | Initial,New,Done |
+| 0105 | [Know when to renew OIDC Private Key JWT](tasks/when_to_renew_oidc_private_key_jwt.md) | If your SAS Viya deployment is configured to use OIDC, ensure that you know when renew the private key JSON web tokens. | Initial,New,Done |
+| 0107 | [Know when to renew your OIDC JWT Signing Keys](tasks/when_to_renew_oidc_jwt_signing_keys.md) | If your SAS Viya deployment is configured to use OIDC, ensure that you know when renew the OIDC JWT signing keys. | Initial,New,backlog |
 | 0110 | [Configure Open Source Integration](tasks/configure_open_source_integration.md) | Configure open source integration | New,Initial,Done |
 | 0120 | [Review Tuning Recommendations](tasks/tuning_recommendations.md) | Review SAS Viya platform tuning recommendations and apply as needed | New,Initial,Done |
 | 0130 | [Configure CORS and CSRF settings](tasks/configure_cors_and_csrf.md) | Configure the SAS Viya platform's Cross-Origin Resource Sharing (CORS) and Cross-Site Request Forgery (CSRF) settings for deployments behind a DNS alias or proxy, and for SAS Visual Analytics | Initial,New,Done |
@@ -147,6 +153,7 @@ These tasks are new in this Checklist for SAS Viya 2020.1 and later. They have n
 | 0240 | [Validate your SAS Viya Deployment](tasks/validate_deployment.md) | Define a set of tests to validate that your SAS Viya deployment is functioning correctly | Initial,New,Done |
 | 0250 | [Define a backup and restore strategy](tasks/backup_and_restore.md) | Define a backup and restore strategy | Initial,New,Done |
 | 0280 | [Decide approach to applying updates](tasks/decide_update_approach.md) | Decide how and when your SAS Viya software will be updated | Initial,New,Done |
+| 0285 | [Configure SAS Workload Management](tasks/configure_sas_workload_management.md) | Configure SAS Workload Management | Initial,New,Done |
 | 0290 | [Configure SAS Studio Preferences](tasks/configure_sas_studio_preferences.md) | Configure SAS Studio Preferences | New,Initial,Done |
 | 0310 | [Secure the sasboot password](tasks/secure_sasboot_password.md) | Disable the sasboot password reset feature after you have finished setting up identities and initial administrators | Initial,New,Done |
 | 0320 | [Secure Default Caslibs, especially the Public Caslib](tasks/secure_default_caslibs.md) | Review and change default access controls on default CAS libraries | Initial,New,Done |
@@ -161,7 +168,8 @@ These tasks are new in this Checklist for SAS Viya 2020.1 and later. They have n
 | 0430 | [Set User Process Limit](tasks/set_user_process_limit.md) | Set the maximum number of launched compute, connect or batch programming run-time pods each user may run simultaneously | Initial,New,Done |
 | 0440 | [Tune the Programming Run-Time](tasks/tune_programming_run-time.md) | Tune the SAS Viya Platform Programming Run-time for better performance with your workload | Initial,New,Done |
 | 0470 | [Update the SAS Viya CLI](tasks/update_sas_viya_cli.md) | Ensure you have installed the sas-viya cli and its plugins | New,Regular,Done |
-| 0480 | [Renew your OIDC client secret](tasks/renew_oidc_client_secret.md) | If your SAS Viya deployment is configured to use OIDC, renew your OIDC client secret before it expires. | Regular,New,Done |
+| 0480 | [Renew your OIDC client secret before it expires](tasks/renew_oidc_client_secret.md) | If your SAS Viya deployment is configured to use OIDC, renew your OIDC client secret before it expires. | Regular,New,Done |
+| 0485 | [Renew your OIDC JWT Signing Keys](tasks/renew_oidc_jwt_signing_keys.md) | If your SAS Viya deployment is configured to use OIDC, renew your OIDC signing keys before they expire. | Regular,New,Done |
 | 0560 | [Monitor Observability Storage](tasks/monitor_observabilty_storage.md) | Monitor the disk or other storage space used for the log and metric monitoring tools, and other observability tools deployed to monitor SAS Viya | Regular,New,Done |
 | 0570 | [Stop and Start SAS Viya's Monitoring and Logging components](tasks/stop_and_start_sas_viya_monitoring_for_kubernetes.md) | Ensure you can stop the logging and monitoring solution and that you can start it back up when needed again. | Regular,New,Done |
 | 0590 | [Keep your Software Current](tasks/keep_software_current.md) | Keep your software current with patch and version updates to stay within Standard Support guidelines. | Regular,New,Done |
@@ -169,14 +177,14 @@ These tasks are new in this Checklist for SAS Viya 2020.1 and later. They have n
 | 0610 | [Periodically Run an Inventory Scan on the Viya Environment](tasks/inventory_scan.md) | Periodically Run an Inventory Scan on the Viya Environment | New,Regular,Done |
 | 0650 | [Configure CAS server startup to load data](tasks/cas_server_startup.md) | Configure CAS server startup to load data | New,Regular,Done |
 | 0660 | [Monitor Compute Sessions](tasks/monitor_compute_sessions.md) | Use the sas-viya CLI, log and metric monitoring tools to monitor compute sessions | Regular,New,Done |
-| 0670 | [Manage content stored in PostgreSQL](tasks/manage_postgresql_content.md) | Manage content stored in PostgresQL | New,Regular,Done |
+| 0670 | [Manage content stored in PostgreSQL](tasks/manage_postgresql_content.md) | Manage content stored in PostgreSQL | New,Regular,Done |
 | 0680 | [Maintain SAS Infrastructure Data Server](tasks/maintain_postgresql_server.md) | Perform routine maintenance on the SAS Infrastructure Data Server | New,Regular,Done |
 
 ## Legacy
 
 These tasks are the modern SAS Viya 2020.1 equivalent of an task which also appeared in one of our earlier checklists. This task may differ significantly from its earlier equivalent.
 
-> *28 tasks tagged as Legacy*
+> *29 tasks tagged as Legacy*
 
 | # ▴ | Title | Description | Tags |
 |---|---|---|---|
@@ -184,6 +192,7 @@ These tasks are the modern SAS Viya 2020.1 equivalent of an task which also appe
 | 0050 | [Update TLS certificates](tasks/encryption_with_public_ca_signed_tls_certificates.md) | Generate new or renew expiring TLS certificates used for encryption of data in transit. | Initial,Legacy,Done |
 | 0080 | [Ensure You Have Provided Sufficient Storage for Path-Based Caslibs](tasks/ensure_storage_for_caslibs.md) | Ensure you have provided sufficient filesystem storage of an appropriate type for path-based caslibs. | Initial,Legacy,Done |
 | 0090 | [Define a Process for Updating External Credentials](tasks/process_for_updating_external_credentials.md) | Define a when and how you will update credentials that are stored in SAS Viya for external systems such as databases, when they change | Initial,Legacy,Done |
+| 0095 | [Know how SAS Viya Authenticates to your OIDC Identity Provider](tasks/how_viya_authenticates_to_oidc_provider.md) | Know how SAS Viya Authenticates to your OIDC Identity Provider | Initial,Legacy,Done |
 | 0140 | [Service Level Agreement](tasks/sla.md) | For enterprise-scale deployments, define a Service Level Agreement (SLA) | Initial,Legacy,Done |
 | 0150 | [Define your organizationâ€™s SAS support team structure, roles, and responsibilities](tasks/define_org_support_structure.md) | Define your organizationâ€™s SAS support team structure, roles, and responsibilities | Initial,Legacy,Done |
 | 0160 | [Premium Support](tasks/premium_support.md) | Consider whether you require premium or customized support for your SAS deployment | Initial,Legacy,Done |
@@ -209,4 +218,4 @@ These tasks are the modern SAS Viya 2020.1 equivalent of an task which also appe
 | 0630 | [Inspect the Status of Scheduled Jobs](tasks/inspect_job_status.md) | Inspect the status of scheduled jobs | Regular,Legacy,Done |
 | 0640 | [Test the Process to Restore From Backups](tasks/test_restore_process.md) | Periodically test the process to restore from backups | Regular,Legacy,Done |
 
-</br>Generated by build_from_template.py on: 23 Sep 2025 16:57:26.</br>
+</br>Generated by build_from_template.py on: 05 Feb 2026 14:05:58.</br>

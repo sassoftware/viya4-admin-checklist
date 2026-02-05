@@ -14,13 +14,15 @@ When: Post-install, after platform changes, and when any shared or service accou
 
 ## Maintain a secure and encrypted password-protected password database using an appropriate software tool or service
 
-KeePass is a popular, good, free, and open-source choice.
+Bitwarden and KeePass are both popular, good, free, and open-source choices if your budget is small.
 
-For larger enterprise-scaled deployments, consider popular paid-for password database tools such as One Identity, CyberArk Enterprise Password Vault, and Centrify. For smaller organizations, consider something like 1Password, LastPass, Dashlane, Keeper, Sticky Password, Bitwarden, NordPass, or ZohoVault.
+For larger enterprise-scaled deployments, consider popular paid-for password database tools such as SecureVault and Secret Server (cloud or on-premise), LastPass, Dashlane Business, Keeper Enterprise Password Manager, Bitwarden, ManageEngine, SpecOps, One Identity, CyberArk Enterprise Password Vault, Centrify, or similar.
+
+For smaller organizations, consider something like 1Password, LastPass, Dashlane, Keeper, Sticky Password, Bitwarden, NordPass, ZohoVault or similar.
 
 Maintain the credentials in this database for service and administrative accounts, external-database-outbound logins, and so on.
 
-Decide whether you should store the credential database in the cloud, or on premise. Keep the password database on a machine that is physically better protected than a desktop or laptop PC so that it cannot easily be stolen. (In other words, store the database on a host in the datacenter or corporate cloud.)
+Decide whether you should store the credential database in the cloud, or on premise. If on premise, keep the password database on a machine that is physically better protected than a desktop or laptop PC so that it cannot easily be stolen. (In other words, store the database on a host in the datacenter or corporate cloud.)
 
 Use multi-factor authentication for access to the hosts in the data center on which the password database is stored, and for authentication to the password database itself.
 

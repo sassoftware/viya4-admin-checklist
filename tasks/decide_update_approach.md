@@ -14,7 +14,7 @@ When: Initial
 
 ## Version Updates
 
-SAS offers [two release cadences](https://go.documentation.sas.com/doc/en/sasadmincdc/default/itopscon/n0skwn6305faxnn1v0lfhzssr41u.htm) [Doc] so that the latest features and fixes can be applied at different intervals depending on business needs:
+SAS offers [two release cadences](https://go.documentation.sas.com/doc/en/sasadmincdc/default/itopscon/n0skwn6305faxnn1v0lfhzssr41u.htm) [Doc] for SAS Viya so that the latest features and fixes can be applied at different intervals depending on business needs:
 
 * The **Stable** cadence delivers monthly version updates to deployed SAS Viya software
 * The **Long-Term Support** (LTS) cadence delivers six-monthly version updates to deployed SAS Viya software.
@@ -24,13 +24,13 @@ To stay within the Standard Support level, which covers the current version and 
 
 SAS provides [different methods and tools](https://go.documentation.sas.com/doc/en/sasadmincdc/default/itopscon/p0839p972nrx25n1dq264egtgrcq.htm) [Doc] for deploying and updating the software. Updates should be performed using the same deployment method used to initially deploy the platform.
 
-Updates are disruptive and may include manual steps. Consult the documentation including [Deployment Notes](https://go.documentation.sas.com/doc/en/sasadmincdc/default/dplynotes/titlepage.htm) [Doc] for your target and interim version for required tasks. The required sequence of tasks should be incorporated into an [update plan](./develop_update_plan.md) [Task].
+Updates are may include manual steps and downtime. Consult the documentation, including [Deployment Notes](https://go.documentation.sas.com/doc/en/sasadmincdc/default/dplynotes/titlepage.htm) [Doc] for your target and interim version for required tasks. The required sequence of tasks should be incorporated into an [update plan](./develop_update_plan.md) [Task].
 
 ## Patch Updates
 
-Critical bug fixes and security vulnerability fixes are delivered as patch updates (new *release* number) as soon as they are ready on both cadences. Apply patch updates as soon as they become available.
+Critical bug fixes and security vulnerability fixes are delivered as patch updates (new *release* number) as soon as they are ready on both cadences. Maintain the health and security of your deployment by regularly applying patch updates.
 
-If the SAS Deployment Operator is deployed, it can be used to automatically deploy patch updates. As an initial task, decide whether [automatic updates will be configured for patch updates](https://go.documentation.sas.com/doc/en/sasadmincdc/default/dplyml0phy0dkr/p13z9dnyxyi28yn131dnppnwpics.htm) [Doc]. If enabled, the SAS Deployment Operator automatically applies any `cadenceRelease` (patch) updates *within* the selected `cadenceName` and `cadenceVersion`. Note, however, that **patch updates may require manual steps to be performed**. As a precaution, always consult the documentation and refer to the README.md files in the root directory of the deployment assets for the release number you are updating to. The operator automatically checks for updates daily (configurable). Refer to [Manage Updates](https://go.documentation.sas.com/doc/en/sasadmincdc/default/dplyml0phy0dkr/p13z9dnyxyi28yn131dnppnwpics.htm) [Doc] for more information. The tasks required to apply patch updates should be included in your [update plan](./develop_update_plan.md) [Task].
+If the SAS Deployment Operator is deployed, it can be used to automatically deploy patch updates. As an initial task, decide whether [automatic updates will be configured for patch updates](https://go.documentation.sas.com/doc/en/sasadmincdc/default/dplyml0phy0dkr/p13z9dnyxyi28yn131dnppnwpics.htm) [Doc]. If enabled, the SAS Deployment Operator can be configured to automatically apply new patches to update your deployment to the latest release. Note, however, that **some patch updates may require manual steps to be performed**. As a precaution, always consult the documentation and refer to the README.md files in the root directory of the deployment assets for the release number you are updating to. The SAS Deployment Operator automatically checks for updates daily (configurable). Refer to [Manage Updates](https://go.documentation.sas.com/doc/en/sasadmincdc/default/dplyml0phy0dkr/p13z9dnyxyi28yn131dnppnwpics.htm) [Doc] for more information. The tasks required to apply patch updates should be included in your [update plan](./develop_update_plan.md) [Task].
 
 See also:
 

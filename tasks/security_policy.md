@@ -20,7 +20,7 @@ This should preferably be defined with the assistance of an experienced SAS arch
 
 The security policy should cover the following tasks:
 
-* How users of the SAS Viya deployment are authenticated (LDAP, OIDC, SAML etc.) and how corporate user identities and group memberships are provided to SAS, e.g. pushed to the SAS Viya identities service by SCIM or pulled from LDAP provider such as Azure Active Directory or its equivalent in your chosen cloud provider.
+* How users of the SAS Viya deployment are authenticated (LDAP, OIDC, SAML etc.) and how corporate user identities and group memberships are provided to SAS, e.g. pushed to the SAS Viya identities service by SCIM or pulled from LDAP provider such as Microsoft Entra ID.
 * Set authorization (access rights and permissions) in SAS Viya, any databases accessed via SAS, Hadoop (for example, Hive), and operating-system-managed assets (for example, files and directories in the file system or files in block storage) used by SAS at a high level. Detailed authorization design is addressed by the security model in the next task.
 * Manage certificates for Transport Layer Security.
 * Encrypt content at rest (for example, data, files, code, passwords, and data sets stored on disk and data stored in databases).

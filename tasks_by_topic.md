@@ -29,7 +29,7 @@ This alternative form of the main [checklist](./checklist.md) lists tasks groupe
 
 ## Kubernetes & IT Admin
 
-> *17 tasks in topic Kubernetes & IT Admin*
+> *20 tasks in topic Kubernetes & IT Admin*
 
 | # ▴ | Title | Description | Frequency |
 |---|---|---|---|
@@ -42,13 +42,16 @@ This alternative form of the main [checklist](./checklist.md) lists tasks groupe
 | 0070 | [Create and Configure User home-directories](tasks/createandconfigure_user_homedirs.md) | Create and configure user-home directories |  |
 | 0080 | [Ensure You Have Provided Sufficient Storage for Path-Based Caslibs](tasks/ensure_storage_for_caslibs.md) | Ensure you have provided sufficient filesystem storage of an appropriate type for path-based caslibs. |  |
 | 0090 | [Define a Process for Updating External Credentials](tasks/process_for_updating_external_credentials.md) | Define a when and how you will update credentials that are stored in SAS Viya for external systems such as databases, when they change |  |
+| 0095 | [Know how SAS Viya Authenticates to your OIDC Identity Provider](tasks/how_viya_authenticates_to_oidc_provider.md) | Know how SAS Viya Authenticates to your OIDC Identity Provider |  |
 | 0100 | [Know when to renew your OIDC client secret](tasks/when_to_renew_oidc_client_secret.md) | Open ID Connect uses expiring client secrets with a maximum lifetime of 2 years. If your SAS Viya deployment is configured to use OIDC, ensure that you know when this client secret expires so that you can renew it before it does. |  |
+| 0105 | [Know when to renew OIDC Private Key JWT](tasks/when_to_renew_oidc_private_key_jwt.md) | If your SAS Viya deployment is configured to use OIDC, ensure that you know when renew the private key JSON web tokens. |  |
 | 0110 | [Configure Open Source Integration](tasks/configure_open_source_integration.md) | Configure open source integration |  |
 | 0120 | [Review Tuning Recommendations](tasks/tuning_recommendations.md) | Review SAS Viya platform tuning recommendations and apply as needed |  |
 | 0130 | [Configure CORS and CSRF settings](tasks/configure_cors_and_csrf.md) | Configure the SAS Viya platform's Cross-Origin Resource Sharing (CORS) and Cross-Site Request Forgery (CSRF) settings for deployments behind a DNS alias or proxy, and for SAS Visual Analytics |  |
 | 0460 | [Renew your SAS Viya License](tasks/update_licenses.md) | Obtain and apply a new SAS Viya platform license before your existing license expires | Annually |
 | 0470 | [Update the SAS Viya CLI](tasks/update_sas_viya_cli.md) | Ensure you have installed the sas-viya cli and its plugins | Quarterly |
-| 0480 | [Renew your OIDC client secret](tasks/renew_oidc_client_secret.md) | If your SAS Viya deployment is configured to use OIDC, renew your OIDC client secret before it expires. | When secret changes |
+| 0480 | [Renew your OIDC client secret before it expires](tasks/renew_oidc_client_secret.md) | If your SAS Viya deployment is configured to use OIDC, renew your OIDC client secret before it expires. | When secret changes |
+| 0485 | [Renew your OIDC JWT Signing Keys](tasks/renew_oidc_jwt_signing_keys.md) | If your SAS Viya deployment is configured to use OIDC, renew your OIDC signing keys before they expire. | When JWT signing key changes |
 | 0490 | [Update External Credentials](tasks/update_external_credentials.md) | When external credentials change, follow your defined process to update them in SAS Viya | When credentials change |
 
 ## Observability
@@ -89,12 +92,12 @@ This alternative form of the main [checklist](./checklist.md) lists tasks groupe
 
 | # ▴ | Title | Description | Frequency |
 |---|---|---|---|
-| 0670 | [Manage content stored in PostgreSQL](tasks/manage_postgresql_content.md) | Manage content stored in PostgresQL | Monthly |
+| 0670 | [Manage content stored in PostgreSQL](tasks/manage_postgresql_content.md) | Manage content stored in PostgreSQL | Monthly |
 | 0680 | [Maintain SAS Infrastructure Data Server](tasks/maintain_postgresql_server.md) | Perform routine maintenance on the SAS Infrastructure Data Server | Monthly |
 
 ## SAS Administration
 
-> *16 tasks in topic SAS Administration*
+> *17 tasks in topic SAS Administration*
 
 | # ▴ | Title | Description | Frequency |
 |---|---|---|---|
@@ -103,6 +106,7 @@ This alternative form of the main [checklist](./checklist.md) lists tasks groupe
 | 0260 | [Know how to Contact SAS Technical Support for Help](tasks/contact_SAS_technical_support.md) | Ensure all SAS platform administration staff know how to contact SAS Technical Support for help |  |
 | 0270 | [Identify Components of SAS and Third-Party Software](tasks/identify_viya_components.md) | Ensure you can identify the components of SAS and third-party software that make up SAS Viya |  |
 | 0280 | [Decide approach to applying updates](tasks/decide_update_approach.md) | Decide how and when your SAS Viya software will be updated |  |
+| 0285 | [Configure SAS Workload Management](tasks/configure_sas_workload_management.md) | Configure SAS Workload Management |  |
 | 0290 | [Configure SAS Studio Preferences](tasks/configure_sas_studio_preferences.md) | Configure SAS Studio Preferences |  |
 | 0300 | [Define a Process for Onboarding and Offboarding Users](tasks/process_for_onboarding_and_offboarding_users.md) | Document any steps that must be performed when new users are onboarded and offboarded |  |
 | 0310 | [Secure the sasboot password](tasks/secure_sasboot_password.md) | Disable the sasboot password reset feature after you have finished setting up identities and initial administrators |  |
@@ -132,4 +136,4 @@ This alternative form of the main [checklist](./checklist.md) lists tasks groupe
 | 0440 | [Tune the Programming Run-Time](tasks/tune_programming_run-time.md) | Tune the SAS Viya Platform Programming Run-time for better performance with your workload |  |
 | 0660 | [Monitor Compute Sessions](tasks/monitor_compute_sessions.md) | Use the sas-viya CLI, log and metric monitoring tools to monitor compute sessions | Daily or as often as necessary |
 
-</br>Generated by build_from_template.py on: 23 Sep 2025 16:57:26.</br>
+</br>Generated by build_from_template.py on: 05 Feb 2026 14:05:58.</br>
